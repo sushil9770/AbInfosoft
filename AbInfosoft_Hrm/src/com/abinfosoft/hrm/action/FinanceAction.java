@@ -37,8 +37,6 @@ public class FinanceAction extends ActionSupport implements SessionAware,Request
 	public String emp_salary()
 	{
 		try {
-			System.out.println("i amhere");
-			
 			return "success";
 		} catch (Exception e) {
 			System.out.println("Exception :"+e);

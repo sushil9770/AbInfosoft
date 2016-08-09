@@ -48,6 +48,12 @@
 <result name="input">index.jsp</result>
 </action>
 
+<action name="dashboard" method="dashboard" class="com.abinfosoft.hrm.action.LoginAction">
+<result name="success">jsp/dashboard.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
+
 
 <action name="emp-salary" method="emp_salary" class="com.abinfosoft.hrm.action.FinanceAction">
 <result name="success">jsp/emp-salary.jsp</result>

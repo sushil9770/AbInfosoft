@@ -59,6 +59,18 @@ public class LoginAction extends ActionSupport implements SessionAware,RequestAw
 	    }
 	
 	
+	public String  dashboard() {
+		try {
+			
+			return "success";
+			
+		} catch (Exception e) {
+		System.out.println("Exception :"+e);
+		return "error";
+		}
+	    }
+	
+	
 	
 
 	

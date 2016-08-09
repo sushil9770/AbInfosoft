@@ -14,7 +14,7 @@
 					<!-- start: MAIN NAVIGATION MENU -->
 					<ul class="main-navigation-menu">
 						<li class="active open">
-							<a href="index.html"><i class="clip-home-3"></i>
+							<a href="dashboard.action"><i class="clip-home-3"></i>
 								<span class="title"> Dashboard </span><span class="selected"></span>
 							</a>
 						</li>
@@ -25,7 +25,7 @@
 							</a>
 							<ul class="sub-menu">
 								<li>
-									<a href="emp-salary">
+									<a href="emp-salary.action">
 										<span class="title">Employee Salary </span>
 									</a>
 								</li>

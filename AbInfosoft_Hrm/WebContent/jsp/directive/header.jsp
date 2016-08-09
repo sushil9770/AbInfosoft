@@ -12,7 +12,7 @@
 					</button>
 					<!-- end: RESPONSIVE MENU TOGGLER -->
 					<!-- start: LOGO -->
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="dashboard.action">
 						Ab<i class="clip-clip"></i>Infosoft
 					</a>
 					<!-- end: LOGO -->
