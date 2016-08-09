@@ -30,7 +30,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="expense.action">
 										<span class="title"> Expense </span>
 									</a>
 								</li>

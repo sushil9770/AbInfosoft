@@ -45,5 +45,15 @@ public class FinanceAction extends ActionSupport implements SessionAware,Request
 		
 	}
 	
+	public String expense()
+	{
+		try {
+			return "success";
+		} catch (Exception e) {
+			System.out.println("Exception :"+e);
+			return "error";
+		}
+		
+	}
 
 }
