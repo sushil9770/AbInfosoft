@@ -2,6 +2,13 @@
     pageEncoding="ISO-8859-1"%>
     <%@ taglib uri="/struts-tags" prefix="s" %>
     
+  <% 
+response.addHeader("Pragma","no-cache"); 
+response.setHeader("Cache-Control","no-cache,no-store,must-revalidate"); 
+response.addHeader("Cache-Control","pre-check=0,post-check=0"); 
+response.setDateHeader("Expires",0); 
+%>    
+    
     
     
     
@@ -47,7 +54,7 @@
 	<!-- start: BODY -->
 	<body class="login example1">
 		<div class="main-login col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-			<div class="logo">CLIP<i class="clip-clip"></i>ONE
+			<div class="logo">Ab<i class="clip-clip"></i>Infosoft
 			</div>
 			<!-- start: LOGIN BOX -->
 			<div class="box-login">
@@ -55,7 +62,9 @@
 				<p>
 					Please enter your name and password to log in.
 				</p>
-				<form class="form-login" action="http://www.cliptheme.com/preview/admin/clip-one/index.html">
+				<s:form action="login" cssClass="form-login">
+				
+				
 					<div class="errorHandler alert alert-danger no-display">
 						<i class="fa fa-remove-sign"></i> You have some form errors. Please check below.
 					</div>
@@ -91,7 +100,8 @@
 							</a>
 						</div>
 					</fieldset>
-				</form>
+				
+				</s:form>
 			</div>
 			<!-- end: LOGIN BOX -->
 			<!-- start: FORGOT BOX -->

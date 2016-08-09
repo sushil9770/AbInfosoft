@@ -27,7 +27,23 @@ public class LoginAction extends ActionSupport implements SessionAware,RequestAw
 	
 	
 	
+	public LoginAction() {
+		System.out.println("Login Action");
+	}
 	
+	
+	public String  login() {
+		try {
+			
+			System.out.println(" i am herer");
+			
+			return "success";
+			
+		} catch (Exception e) {
+		System.out.println("Exception :"+e);
+		return "error";
+		}
+	    }
 	
 	
 	

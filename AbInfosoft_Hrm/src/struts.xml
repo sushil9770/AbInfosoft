@@ -42,14 +42,13 @@
  
  
 
-<!-- <action name="login" method="login" class="com.rpts.action.LoginAction">
+ <action name="login" method="login" class="com.abinfosoft.hrm.action.LoginAction">
 
-<result name="success"  >select_org.jsp</result>
+<result name="success">jsp/dashboard.jsp</result>
 <result name="error" >index.jsp</result>
 <result name="input">index.jsp</result>
-<result name="update_pass">update_pass.jsp</result>
 </action>
- -->
+ 
 
 
 
