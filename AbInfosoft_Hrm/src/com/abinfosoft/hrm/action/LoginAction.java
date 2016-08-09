@@ -20,6 +20,21 @@ public class LoginAction extends ActionSupport implements SessionAware,RequestAw
 	private Map session;
 	private Map request;
 	
+	public Map getSession() {
+		return session;
+	}
+	public Map getRequest() {
+		return request;
+	}
+	@Override
+	public void setRequest(Map request) {
+		this.request = request;
+	}
+	@Override
+	public void setSession(Map session) {
+		this.session = session;	
+	}
+	
 	 	
 	
 	private String username;
@@ -35,8 +50,6 @@ public class LoginAction extends ActionSupport implements SessionAware,RequestAw
 	public String  login() {
 		try {
 			
-			System.out.println(" i am herer");
-			
 			return "success";
 			
 		} catch (Exception e) {
@@ -48,20 +61,7 @@ public class LoginAction extends ActionSupport implements SessionAware,RequestAw
 	
 	
 
-	public Map getSession() {
-		return session;
-	}
-	public Map getRequest() {
-		return request;
-	}
-	@Override
-	public void setRequest(Map request) {
-		this.request = request;
-	}
-	@Override
-	public void setSession(Map session) {
-		this.session = session;	
-	}
+	
 	public String getUsername() {
 		return username;
 	}
