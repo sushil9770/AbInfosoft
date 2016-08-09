@@ -16,7 +16,7 @@
 		
 		
 
-<interceptors>
+<!-- <interceptors>
                 <interceptor class="com.interceptor.LoginInterceptor" name="loginInterceptor">
                 </interceptor>
                 <interceptor-stack name="loginStack">
@@ -25,31 +25,31 @@
                 </interceptor-stack>
                 
                
-        </interceptors>
+        </interceptors> -->
         
         
       
 
-<global-results>
+<!-- <global-results>
 <result name="login">index.jsp</result>
 
 <result name="invalid.token">utility_404_example2.jsp</result>
 	
 
 </global-results>
- 	
+ 	 -->
  
  
  
 
-<action name="login" method="login" class="com.rpts.action.LoginAction">
+<!-- <action name="login" method="login" class="com.rpts.action.LoginAction">
 
 <result name="success"  >select_org.jsp</result>
 <result name="error" >index.jsp</result>
 <result name="input">index.jsp</result>
 <result name="update_pass">update_pass.jsp</result>
 </action>
-
+ -->
 
 
 
