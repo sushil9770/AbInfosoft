@@ -113,11 +113,9 @@
 											<thead>
 												<tr>
 													<th class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></th>
+													
+														#
+													</th>
 													<th>Emp Name</th>
 													<th>Amount</th>
 													<th><i class="fa fa-time"></i>Date</th>
@@ -129,24 +127,31 @@
 											</thead>
 											<tbody>
 											
-											<s:iterator id ="data" value="#request.data">
+											<s:iterator id ="data" value="#request.data" status="stat">
 												<tr>
 													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
+													
+														
+															<s:property value="#stat.index"/>
+														
+													
 													<td>
 													<a href="#">
 														<s:property value="#data.employee_name"/>
 													</a></td>
-													<td>ghgg</td>
-													<td>3,330</td>
-													<td>Feb 13</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td><span class="label label-sm label-warning">Expiring</span></td>
+													<td>
+												<input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+											  </td>
+													<td><input type="text" placeholder="<s:property value="#data.employee_payment_date"/>" id="form-field-9" class="form-control">
+											</td>
+													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+											</td>
+													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+											</td>
+													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+											</td>
+													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+											</td>
 												</tr>
 												</s:iterator>
 												
