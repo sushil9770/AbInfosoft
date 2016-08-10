@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+     <%@ taglib uri="/struts-tags" prefix="s" %>
 
     
     <!DOCTYPE html>
@@ -127,6 +128,8 @@
 												</tr>
 											</thead>
 											<tbody>
+											
+											<s:iterator id ="data" value="#request.data">
 												<tr>
 													<td class="center">
 													<div class="checkbox-table">
@@ -136,69 +139,16 @@
 													</div></td>
 													<td>
 													<a href="#">
-														Sanjeev
+														<s:property value="#data.employee_name"/>
 													</a></td>
-													<td>$45</td>
+													<td>ghgg</td>
 													<td>3,330</td>
 													<td>Feb 13</td>
 													<td>Feb 10</td>
 													<td>Feb 10</td>
 													<td><span class="label label-sm label-warning">Expiring</span></td>
 												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>
-													<a href="#">
-														Prakash
-													</a></td>
-													<td>$70</td>
-													<td>3,330</td>
-													<td>Jen 15</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td><span class="label label-sm label-success">Registered</span></td>
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>
-													<a href="#">
-														Vaibhav
-													</a></td>
-													<td>$25</td>
-													<td>3,330</td>
-													<td>Mar 09</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td><span class="label label-sm label-danger">Expired</span></td>
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>
-													<a href="#">
-														Vijay
-													</a></td>
-													<td>$50</td>
-													<td>3,330</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td><span class="label label-sm label-inverse">Flagged</span></td>
-												</tr>
+												</s:iterator>
 												
 											</tbody>
 										</table>
