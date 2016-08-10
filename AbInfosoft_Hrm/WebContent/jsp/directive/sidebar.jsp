@@ -18,20 +18,64 @@
 								<span class="title"> Dashboard </span><span class="selected"></span>
 							</a>
 						</li>
+						
 						<li>
-							<a href="javascript:void(0)"><i class="clip-screen"></i>
-								<span class="title"> Financial Expenses </span><i class="icon-arrow"></i>
+							<a href="javascript:void(0)"><i class="clip-users"></i>
+								<span class="title"> Emp Management </span><i class="icon-arrow"></i>
+								<span class="selected"></span>
+							</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">
+										<span class="title">Employee List </span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="title"> Add Leave </span>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+						
+						
+						<li>
+							<a href="javascript:void(0)"><i class="clip-calendar"></i>
+								<span class="title"> Leave Management </span><i class="icon-arrow"></i>
+								<span class="selected"></span>
+							</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">
+										<span class="title">Leave List </span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="title"> Add Leave </span>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+						
+						
+						
+						<li>
+							<a href="javascript:void(0)"><i class="clip-pencil"></i>
+								<span class="title"> Salary Management </span><i class="icon-arrow"></i>
 								<span class="selected"></span>
 							</a>
 							<ul class="sub-menu">
 								<li>
 									<a href="emp-salary.action">
-										<span class="title">Employee Salary </span>
+										<span class="title">Upload Data </span>
 									</a>
 								</li>
 								<li>
-									<a href="expense.action">
-										<span class="title"> Expense </span>
+									<a href="#">
+										<span class="title"> Report </span>
 									</a>
 								</li>
 								
@@ -65,12 +109,7 @@
 						
 						
 						
-						<li>
-							<a href="#l"><i class="fa fa-calendar"></i>
-								<span class="title">Leave Details</span>
-								<span class="selected"></span>
-							</a>
-						</li>
+						
 					</ul>
 					<!-- end: MAIN NAVIGATION MENU -->
 				</div>
