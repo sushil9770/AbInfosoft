@@ -11,7 +11,7 @@ import com.abinfosoft.hrm.dao.imp.EmployeeSalaryDaoImp;
 import com.abinfosoft.hrm.dto.EmployeeDetails;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class FinanceAction extends ActionSupport implements SessionAware,RequestAware {
+public class SalaryAction extends ActionSupport implements SessionAware,RequestAware {
 	
 	
 	
@@ -38,7 +38,7 @@ public class FinanceAction extends ActionSupport implements SessionAware,Request
 	
 	
 	
-	public String emp_salary()
+	public String add_salary()
 	{
 		try {
 			

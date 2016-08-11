@@ -55,8 +55,8 @@
 </action>
 
 
-<action name="emp-salary" method="emp_salary" class="com.abinfosoft.hrm.action.FinanceAction">
-<result name="success">jsp/emp-salary.jsp</result>
+<action name="add-salary" method="add_salary" class="com.abinfosoft.hrm.action.SalaryAction">
+<result name="success">jsp/salary/add-salary.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
@@ -66,7 +66,27 @@
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
+
+<action name="emp-list" method="employeelist" class="com.abinfosoft.hrm.action.EmployeeAction">
+<result name="success">jsp/employee/employee-list.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
  
+
+<action name="emp-add" method="employeeadd" class="com.abinfosoft.hrm.action.EmployeeAction">
+<result name="success">jsp/employee/employee-add.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
+
+<action name="emp-profile" method="employeeprofile" class="com.abinfosoft.hrm.action.EmployeeAction">
+<result name="success">jsp/employee/employee_profile.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
+ 
+
 
 
 

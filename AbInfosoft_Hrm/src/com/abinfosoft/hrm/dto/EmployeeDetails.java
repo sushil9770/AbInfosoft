@@ -8,6 +8,8 @@ public class EmployeeDetails {
 	private String employee_email;
 	private String employee_id;
 	private String employee_phone;
+	
+	
 	private Date employee_payment_date;
 
 	public EmployeeDetails() {

@@ -4,7 +4,6 @@
 
     
     <!DOCTYPE html>
-<!-- Template Name: Clip-One - Responsive Admin Template build with Twitter Bootstrap 3.x Version: 1.4 Author: ClipTheme -->
 <!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
 <!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
 <!--[if !IE]><!-->
@@ -13,7 +12,7 @@
 	<!-- start: HEAD -->
 	
 <head>
-		<title>AbInfosoft- Dashboard</title>
+		<title>AbInfosoft</title>
 		<!-- start: META -->
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->

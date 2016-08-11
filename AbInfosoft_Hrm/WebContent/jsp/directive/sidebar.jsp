@@ -26,13 +26,13 @@
 							</a>
 							<ul class="sub-menu">
 								<li>
-									<a href="#">
+									<a href="emp-list.action">
 										<span class="title">Employee List </span>
 									</a>
 								</li>
 								<li>
-									<a href="#">
-										<span class="title"> Add Leave </span>
+									<a href="emp-add.action">
+										<span class="title"> Add Employee </span>
 									</a>
 								</li>
 								

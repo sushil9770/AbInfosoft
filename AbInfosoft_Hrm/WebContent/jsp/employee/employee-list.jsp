@@ -48,10 +48,10 @@
 	<!-- start: BODY -->
 	<body>
 		
-		<c:import url="directive/header.jsp"></c:import>
+		<c:import url="/jsp/directive/header.jsp"></c:import>
 		<!-- start: MAIN CONTAINER -->
 		<div class="main-container">
-        <c:import url="directive/sidebar.jsp"></c:import>
+        <c:import url="/jsp/directive/sidebar.jsp"></c:import>
 
 			<!-- start: PAGE -->
 			<div class="main-content">
@@ -70,22 +70,140 @@
 									</a>
 								</li>
 								<li class="active">
-									 Financial Expenses
+									 Employee Management
 								</li>
 								<li class="active">
-									 Salary
+									 Employee List
 								</li>
 								
 							</ol>
 							<div class="page-header">
-								<h1>Employee Salary  <small>overview &amp; Details </small></h1>
+								<h1>Employee List  <small>overview &amp; Details </small></h1>
 							</div>
 							<!-- end: PAGE TITLE & BREADCRUMB -->
 							
 							
 							
 							
+							<div class="panel panel-default">
+								<!-- <div class="panel-heading">
+									<i class="fa fa-external-link-square"></i>
+									Employee Information
+									<div class="panel-tools">
+										<a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+										</a>
+										<a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<a class="btn btn-xs btn-link panel-refresh" href="#">
+											<i class="fa fa-refresh"></i>
+										</a>
+										<a class="btn btn-xs btn-link panel-expand" href="#">
+											<i class="fa fa-resize-full"></i>
+										</a>
+										<a class="btn btn-xs btn-link panel-close" href="#">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div> -->
+								<div class="panel-body">
+									
+									
+									
+									<form action="#" role="form" id="form" novalidate="novalidate">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="errorHandler alert alert-danger no-display">
+													<i class="fa fa-times-sign"></i> You have some form errors. Please check below.
+												</div>
+												<div class="successHandler alert alert-success no-display">
+													<i class="fa fa-ok"></i> Your form validation is successful!
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label">
+														Employee Name <span class="symbol required"></span>
+													</label>
+													<input type="text"  class="form-control" id="firstname" name="firstname">
+												</div>
+												<div class="form-group">
+													<label class="control-label">
+														Supervisor Name <span class="symbol required"></span>
+													</label>
+													<input type="text"  class="form-control" id="lastname" name="lastname">
+												</div>
+												<div class="form-group">
+													<button type="button" class="btn btn-teal"><i class="clip-search-2"></i>
+											Search
+										</button>
+												</div>
+												
+												
+											</div>
+											<div class="col-md-4">
+												<div class="form-group connected-group">
+												
+												
+												
+													<label class="control-label">
+														Employee Id <span class="symbol required"></span>
+													</label>
+													<input type="text"  class="form-control" id="firstname" name="firstname">
+											
+												</div>
+												<div class="form-group">
+													<label class="control-label">
+														Employment Status <span class="symbol required"></span>
+													</label>
+													<select class="form-control" id="lastname">
+													 <option value="" disabled selected>Select </option>
+													<option>Active </option>
+													<option>In-Active </option>
+													<option>All </option>
+													</select>
+												</div>
+												
+												
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label">
+														Employment Type <span class="symbol required"></span>
+													</label>
+													<select class="form-control" id="lastname">
+													 <option value="" disabled selected>Select </option>
+													<option>Permanent </option>
+													<option>Contract </option>
+													</select>
+												</div>
+												<div class="form-group">
+													<label class="control-label">
+														Job Title <span class="symbol required"></span>
+													</label>
+													<select class="form-control" id="lastname">
+													 <option value="" disabled selected>Select </option>
+													<option>Project Manger </option>
+													<option>Software Developer </option>
+													<option>Software Trainee </option>
+													</select>
+												</div>
+												
+											</div>
+										</div>
+										
+										
+									</form>
+								</div>
+							</div>
+							
+							
+							
 							<!-- start: RESPONSIVE TABLE PANEL -->
+							<div class="row">
+						<div class="col-md-12">
+							
+							
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<i class="fa fa-external-link-square"></i>
@@ -113,53 +231,84 @@
 											<thead>
 												<tr>
 													<th class="center">
-													
-														#
-													</th>
-													<th>Emp Name</th>
-													<th>Amount</th>
-													<th><i class="fa fa-time"></i>Date</th>
-													<th> Ref No </th>
-													<th>Bank</th>
-													<th>Description</th>
-													<th>Leaves/Deduction</th>
+													<div class="checkbox-table">
+														<label>
+															<input type="checkbox" class="flat-grey">
+														</label>
+													</div></th>
+													<th>Employee Name</th>
+													<th>Employee Id </th>
+													<th>Supervisor Name </th>
+													<th>Employment Type</th>
+													<th> Job Title  </th>
+													<th>Employment Status</th>
 												</tr>
 											</thead>
 											<tbody>
-											
-											<s:iterator id ="data" value="#request.data" status="stat">
 												<tr>
 													<td class="center">
-													
-														
-															<s:property value="#stat.index"/>
-														
-													
+													<div class="checkbox-table">
+														<label>
+															<input type="checkbox" class="flat-grey">
+														</label>
+													</div></td>
 													<td>
-													<a href="#">
-														<s:property value="#data.employee_name"/>
+													<a href="emp-profile.action">
+														Sushil Kumar
 													</a></td>
-													<td>
-												<input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											  </td>
-													<td><input type="text" placeholder="<s:property value="#data.employee_payment_date"/>" id="form-field-9" class="form-control">
-											</td>
-													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											</td>
-													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											</td>
-													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											</td>
-													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											</td>
+													<td>EMP-0031</td>
+													<td>Praval Srivastava </td>
+													<td>Permanent</td>
+													<td>Software Developer </td>
+													<td><span class="label label-sm label-success">Active</span></td>
 												</tr>
-												</s:iterator>
-												
+												<tr>
+													<td class="center">
+													<div class="checkbox-table">
+														<label>
+															<input type="checkbox" class="flat-grey">
+														</label>
+													</div></td>
+													<td>
+													<a href="emp-profile.action">
+														Parag Sarkar
+													</a></td>
+													<td>EMP-0021</td>
+													<td>Praval Srivastava </td>
+													<td>Permanent</td>
+													<td>Software Developer </td>
+													<td><span class="label label-sm label-warning">In-Active</span></td>
+												</tr>
+												<tr>
+													<td class="center">
+													<div class="checkbox-table">
+														<label>
+															<input type="checkbox" class="flat-grey">
+														</label>
+													</div></td>
+													<td>
+													<a href="emp-profile.action">
+														Shantanu Biswal
+													</a></td>
+													<td>EMP-0045</td>
+													<td>Praval Srivastava </td>
+													<td>Permanent</td>
+													<td>Software Developer </td>
+													<td><span class="label label-sm label-success">Active</span></td>
+												</tr>
+								
 											</tbody>
 										</table>
+										<div class="form-group">
+													<button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i>
+											Delete
+										</button>
+												</div>
 									</div>
 								</div>
 							</div>
+							<!-- end: RESPONSIVE TABLE PANEL -->
+						</div>
 							
 						</div>
 						
@@ -179,6 +328,8 @@
 				</div>
 			</div>
 			<!-- end: PAGE -->
+		</div>
+		
 		</div>
 		<!-- end: MAIN CONTAINER -->
 		<!-- start: FOOTER -->
@@ -232,6 +383,9 @@
 				Index.init();
 			});
 		</script>
+		
+		
+		
 	</body>
 	<!-- end: BODY -->
 
