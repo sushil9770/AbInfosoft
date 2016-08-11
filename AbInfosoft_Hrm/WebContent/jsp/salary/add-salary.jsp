@@ -3,8 +3,7 @@
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
      <%@ taglib uri="/struts-tags" prefix="s" %>
 
-    
-    <!DOCTYPE html>
+ <!DOCTYPE html>
 <!-- Template Name: Clip-One - Responsive Admin Template build with Twitter Bootstrap 3.x Version: 1.4 Author: ClipTheme -->
 <!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
 <!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
@@ -13,8 +12,9 @@
 	<!--<![endif]-->
 	<!-- start: HEAD -->
 	
+<!-- Mirrored from www.cliptheme.com/preview/admin/clip-one/form_elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2016 05:18:55 GMT -->
 <head>
-		<title>AbInfosoft</title>
+		<title>Clip-One - Responsive Admin Template</title>
 		<!-- start: META -->
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
@@ -40,7 +40,14 @@
 		<![endif]-->
 		<!-- end: MAIN CSS -->
 		<!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
-		<link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
+		<link rel="stylesheet" href="assets/plugins/select2/select2.css">
+		<link rel="stylesheet" href="assets/plugins/datepicker/css/datepicker.css">
+		<link rel="stylesheet" href="assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+		<link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css">
+		<link rel="stylesheet" href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css">
+		<link rel="stylesheet" href="assets/plugins/jQuery-Tags-Input/jquery.tagsinput.css">
+		<link rel="stylesheet" href="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css">
+		<link rel="stylesheet" href="assets/plugins/summernote/build/summernote.css">
 		<!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 		<link rel="shortcut icon" href="favicon.ico" />
 	</head>
@@ -85,6 +92,62 @@
 							
 							
 							
+								<div class="panel panel-default">
+								
+								<div class="panel-body">
+									
+									
+									
+									<form action="#" role="form" id="form" novalidate="novalidate">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="errorHandler alert alert-danger no-display">
+													<i class="fa fa-times-sign"></i> You have some form errors. Please check below.
+												</div>
+												<div class="successHandler alert alert-success no-display">
+													<i class="fa fa-ok"></i> Your form validation is successful!
+												</div>
+											</div>
+											<div class="col-md-4">
+												
+												  <div class="form-group">
+										<label for="form-field-select-3">
+											Select Payment Slot 
+										</label>
+										<select id="form-field-select-3" class="form-control search-select">
+											<option value="">&nbsp;</option>
+											<option value="AL">YYYY-MM-10</option>
+											<option value="AK">YYYY-MM-20</option>
+										</select>
+									</div>
+												   
+												    
+												 
+												
+												<div class="form-group">
+													<button type="button" class="btn btn-teal">
+											Submit
+										</button>
+												</div>
+												
+												
+											</div>
+											
+											
+										</div>
+										
+										
+									</form>
+								</div>
+							</div>
+							
+							
+							
+							
+						
+							
+							
+							
 							<!-- start: RESPONSIVE TABLE PANEL -->
 							<div class="panel panel-default">
 								<div class="panel-heading">
@@ -108,17 +171,59 @@
 									</div>
 								</div>
 								<div class="panel-body">
+								
+								
+								
+									<div class="panel panel-default">
+								
+								<div class="panel-body">
+									
+									
+									
+									<form action="#" role="form" id="form" novalidate="novalidate">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="errorHandler alert alert-danger no-display">
+													<i class="fa fa-times-sign"></i> You have some form errors. Please check below.
+												</div>
+												<div class="successHandler alert alert-success no-display">
+													<i class="fa fa-ok"></i> Your form validation is successful!
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label">
+														Select Date <span class="symbol required"></span>
+													</label>
+													<div class="input-group">
+										        <input type="text" data-date-format="dd-mm-yyyy" data-date-viewmode="years" class="form-control date-picker">
+										        <span class="input-group-addon"> <i class="fa fa-calendar"></i> </span>
+									            </div> 
+												</div>
+											</div>
+											
+											
+										</div>
+										
+										
+									</form>
+								</div>
+							</div>
+								
+								
+								
+								
+								
 									<div class="table-responsive">
 										<table class="table table-bordered table-hover" id="sample-table-1">
 											<thead>
 												<tr>
 													<th class="center">
 													
-														#
+														<div style="width: 50px">#</div>
 													</th>
 													<th>Emp Name</th>
 													<th>Amount</th>
-													<th><i class="fa fa-time"></i>Date</th>
 													<th> Ref No </th>
 													<th>Bank</th>
 													<th>Description</th>
@@ -129,34 +234,31 @@
 											
 											<s:iterator id ="data" value="#request.data" status="stat">
 												<tr>
-													<td class="center">
-													
-														
-															<s:property value="#stat.index"/>
-														
-													
-													<td>
-													<a href="#">
-														<s:property value="#data.employee_name"/>
-													</a></td>
-													<td>
+												<td class="center" >
+												<s:property value="#stat.index"/>
+												<td>
+												<a href="#">
+												<s:property value="#data.employee_name"/>
+												</a></td>
+												<td>
 												<input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											  </td>
-													<td><input type="text" value="<s:property value="#data.employee_payment_date"/>" id="form-field-9" class="form-control">
-											</td>
-													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											</td>
-													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											</td>
-													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											</td>
-													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
-											</td>
+											    </td>
+												<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+											    </td>
+												<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+											    </td>
+											    <td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+											    </td>
+												<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
+									            </td>
 												</tr>
 												</s:iterator>
-												
-											</tbody>
+											    </tbody>
 										</table>
+										
+										<button type="button" class="btn btn-primary">
+											Submit
+										</button>
 									</div>
 								</div>
 							</div>
@@ -190,11 +292,7 @@
 				<span class="go-top"><i class="clip-chevron-up"></i></span>
 			</div>
 		</div>
-		<!-- end: FOOTER -->
-		<!-- start: RIGHT SIDEBAR -->
-		
-		<!-- end: RIGHT SIDEBAR -->
-		
+	<!-- end: RIGHT SIDEBAR -->
 		<!-- start: MAIN JAVASCRIPTS -->
 		<!--[if lt IE 9]>
 		<script src="assets/plugins/respond.min.js"></script>
@@ -217,22 +315,27 @@
 		<script src="assets/js/main.js"></script>
 		<!-- end: MAIN JAVASCRIPTS -->
 		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-		<script src="assets/plugins/flot/jquery.flot.js"></script>
-		<script src="assets/plugins/flot/jquery.flot.pie.js"></script>
-		<script src="assets/plugins/flot/jquery.flot.resize.min.js"></script>
-		<script src="assets/plugins/jquery.sparkline/jquery.sparkline.js"></script>
-		<script src="assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-		<script src="assets/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-		<script src="assets/plugins/fullcalendar/fullcalendar/fullcalendar.js"></script>
-		<script src="assets/js/index.js"></script>
+		<script src="assets/plugins/jquery-inputlimiter/jquery.inputlimiter.1.3.1.min.js"></script>
+		<script src="assets/plugins/autosize/jquery.autosize.min.js"></script>
+		<script src="assets/plugins/select2/select2.min.js"></script>
+		<script src="assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+		<script src="assets/plugins/jquery-maskmoney/jquery.maskMoney.js"></script>
+		<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+		<script src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+		<script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+		<script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+		<script src="assets/plugins/bootstrap-colorpicker/js/commits.js"></script>
+		<script src="assets/plugins/jQuery-Tags-Input/jquery.tagsinput.js"></script>
+		<script src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+		<script src="assets/plugins/summernote/build/summernote.min.js"></script>
+		<script src="assets/plugins/ckeditor/ckeditor.js"></script>
+		<script src="assets/plugins/ckeditor/adapters/jquery.js"></script>
+		<script src="assets/js/form-elements.js"></script>
 		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 		<script>
 			jQuery(document).ready(function() {
 				Main.init();
-				Index.init();
+				FormElements.init();
 			});
 		</script>
-	</body>
-	<!-- end: BODY -->
-
-</html>
