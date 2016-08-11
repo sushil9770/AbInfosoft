@@ -61,7 +61,7 @@
 <result name="input">jsp/dashboard.jsp</result>
 </action>
 
-<action name="expense" method="expense" class="com.abinfosoft.hrm.action.FinanceAction">
+<action name="expense" method="expense" class="com.abinfosoft.hrm.action.SalaryAction">
 <result name="success">jsp/expense.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>

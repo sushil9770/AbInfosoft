@@ -48,10 +48,10 @@
 	<!-- start: BODY -->
 	<body>
 		
-		<c:import url="directive/header.jsp"></c:import>
+		<c:import url="/jsp/directive/header.jsp"></c:import>
 		<!-- start: MAIN CONTAINER -->
 		<div class="main-container">
-        <c:import url="directive/sidebar.jsp"></c:import>
+        <c:import url="/jsp/directive/sidebar.jsp"></c:import>
 
 			<!-- start: PAGE -->
 			<div class="main-content">
@@ -142,7 +142,7 @@
 													<td>
 												<input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
 											  </td>
-													<td><input type="text" placeholder="<s:property value="#data.employee_payment_date"/>" id="form-field-9" class="form-control">
+													<td><input type="text" value="<s:property value="#data.employee_payment_date"/>" id="form-field-9" class="form-control">
 											</td>
 													<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
 											</td>

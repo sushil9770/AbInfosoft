@@ -69,7 +69,7 @@
 							</a>
 							<ul class="sub-menu">
 								<li>
-									<a href="emp-salary.action">
+									<a href="add-salary.action">
 										<span class="title">Upload Data </span>
 									</a>
 								</li>
