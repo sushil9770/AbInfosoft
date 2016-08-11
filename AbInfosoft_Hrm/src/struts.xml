@@ -8,12 +8,19 @@
 
    
 
-<constant name="struts.convention.result.path" value="/"></constant>
-<package name="abc" extends="struts-default">
+<constant name="struts.devMode" value="true" />
+<package name="abc" extends="struts-default , json-default">
 
 
 
 		
+   	 <result-types>
+        <result-type name="json" class="org.apache.struts2.json.JSONResult"/>
+    </result-types>
+    <interceptors>
+        <interceptor name="json" class="org.apache.struts2.json.JSONInterceptor"/>
+    </interceptors>
+	
 		
 
 <!-- <interceptors>
@@ -93,6 +100,11 @@
 <!--  -->
 
 
+
+<action name="getJSONResult"
+           class="com.abinfosoft.hrm.action.JSONDataAction">
+       	   <result type="json" />
+      </action>
 
 
 </package>
