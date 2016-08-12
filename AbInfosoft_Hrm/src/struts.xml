@@ -97,8 +97,14 @@
 
 <!-- leave action -->
 
+<action name="leave-request" method="leaverequest" class="com.abinfosoft.hrm.action.LeaveAction">
+<result name="success">jsp/leave/leave-request.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
+
 <action name="leave-list" method="leavelist" class="com.abinfosoft.hrm.action.LeaveAction">
-<result name="success">jsp/employee/leave-list.jsp</result>
+<result name="success">jsp/leave/leave-list.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>

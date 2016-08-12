@@ -52,7 +52,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="leave-request.action">
 										<span class="title"> Leave Request </span>
 									</a>
 								</li>
