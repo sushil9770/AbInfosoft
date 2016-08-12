@@ -129,6 +129,23 @@
 <!--  -->
 
 
+<!-- holiday action -->
+
+<action name="event-list" method="eventlist" class="com.abinfosoft.hrm.action.EventAction">
+<result name="success">jsp/event/event-list.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
+
+<action name="event-add" method="eventadd" class="com.abinfosoft.hrm.action.EventAction">
+<result name="success">jsp/event/event-add.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
+
+<!--  -->
+
+
 
 <action name="getJSONResult" method="employee_list"
            class="com.abinfosoft.hrm.action.JSONDataAction">

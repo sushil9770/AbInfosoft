@@ -79,7 +79,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="holiday-list.action">
+									<a href="event-list.action">
 										<span class="title">Event List / Add </span>
 									</a>
 								</li>
