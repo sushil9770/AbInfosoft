@@ -7,7 +7,7 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class LeaveAction  extends ActionSupport implements SessionAware,RequestAware{
+public class HolidayAction extends ActionSupport implements SessionAware,RequestAware{
 
 	
 
@@ -31,20 +31,9 @@ public class LeaveAction  extends ActionSupport implements SessionAware,RequestA
 	
 	
 	
-
-	public String leaverequest()
+	public String holidaylist()
 	{
-	return "success";
+		return "success";
+		
 	}
-	public String leavelist()
-	{
-	return "success";
-	}
-	public String leaveadd()
-	{
-	return "success";
-	}
-	
-	
-	
 }

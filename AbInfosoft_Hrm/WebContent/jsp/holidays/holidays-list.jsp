@@ -14,7 +14,7 @@
 	
 <!-- Mirrored from www.cliptheme.com/preview/admin/clip-one/form_elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2016 05:18:55 GMT -->
 <head>
-		<title>Clip-One - Responsive Admin Template</title>
+		<title>Ab Infosoft</title>
 		<!-- start: META -->
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
@@ -80,15 +80,15 @@
 									</a>
 								</li>
 								<li class="active">
-									 Leave Management
+									 Holidays Management
 								</li>
 								<li class="active">
-									 Leave List
+									 Holidays List
 								</li>
 								
 							</ol>
 							<div class="page-header">
-								<h1>Leave List  <small>overview &amp; Details </small></h1>
+								<h1>Holidays List  <small>overview &amp; Details </small></h1>
 							</div>
 							<!-- end: PAGE TITLE & BREADCRUMB -->
 							
@@ -131,19 +131,58 @@
 												</div>
 											</div>
 											<div class="col-md-4">
-												
-												
-												
 												<div class="form-group">
+													<label class="control-label">
+														Holiday title <span class="symbol required"></span>
+													</label>
+													<input type="text"  class="form-control" id="firstname" name="firstname">
+												</div>
 												
-													<a href="leave-add.action" type="button" class="btn btn-teal">
-											Add Leave
-										</a>
+												<div class="col-md-4 row ">
+												<div class="form-group">
+													<button type="button" class="btn btn-teal">
+											Search
+										</button>
+												</div>
+												</div>
+												
+												<div class="col-md-4 ">
+												<div class="form-group">
+													<button type="button" class=" btn btn-primary" style="width: 90%">
+											Add 
+										</button>
+												</div>
+												</div>
+												
+											</div>
+											<div class="col-md-4">
+												<div class="form-group connected-group">
+												
+												
+												
+													<label class="control-label">
+														From <span class="symbol required"></span>
+													</label>
+													<div class="input-group">
+										<input type="text" data-date-format="dd-mm-yyyy" data-date-viewmode="years" class="form-control date-picker">
+										<span class="input-group-addon"> <i class="fa fa-calendar"></i> </span>
+									</div>
 												</div>
 												
 												
 											</div>
-											
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label">
+														To <span class="symbol required"></span>
+													</label>
+													<div class="input-group">
+										<input type="text" data-date-format="dd-mm-yyyy" data-date-viewmode="years" class="form-control date-picker">
+										<span class="input-group-addon"> <i class="fa fa-calendar"></i> </span>
+									</div>
+												</div>
+												
+											</div>
 										</div>
 										
 										
@@ -181,7 +220,7 @@
 								</div>
 								<div class="panel-body">
 									<div class="table-responsive">
-										<table class="table table-bordered table-hover" id="sample-table-1" style="width: 500px">
+										<table class="table table-bordered table-hover" id="sample-table-1">
 											<thead>
 												<tr>
 													<th class="center">
@@ -190,8 +229,10 @@
 															<input type="checkbox" class="flat-grey">
 														</label>
 													</div></th>
-													<th>Leave Name</th>
-												
+													<th>Holiday Date</th>
+													<th>Holiday Name</th>
+													<th>Full Day / Half Day</th>
+													<th>Repeats Annually </th>
 												</tr>
 											</thead>
 											<tbody>
@@ -202,19 +243,14 @@
 															<input type="checkbox" class="flat-grey">
 														</label>
 													</div></td>
-													<td>Annual Leave</td>
-													
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>Sick Leave</td>
+													<td>2016-08-08</td>
+													<td>
+													<a href="emp-profile.action">
+														Raksha Bandhan (Rakhi)
+													</a></td>
+													<td>Full Day</td>
+															<td><span class="label label-sm label-success">YES</span></td>
 												
-											
 												</tr>
 												<tr>
 													<td class="center">
@@ -223,8 +259,16 @@
 															<input type="checkbox" class="flat-grey">
 														</label>
 													</div></td>
-													<td>Leave for Emergency Services</td>
+													<td>2016-15-08</td>
+													<td>
+													<a href="emp-profile.action">
+														Independence Day
+													</a></td>
+													<td>Full Day </td>
 													
+													
+													<td><span class="label label-sm label-warning">NO</span></td>
+												
 												</tr>
 												<tr>
 													<td class="center">
@@ -233,10 +277,16 @@
 															<input type="checkbox" class="flat-grey">
 														</label>
 													</div></td>
-													<td>Time Off with Compensation</td>
+													<td>2016-08-08</td>
+													<td>
+													<a href="emp-profile.action">
+														Guru Govind Singh Jayanti
+													</a></td>
+													<td>Full Day </td>
+													
+													<td><span class="label label-sm label-success">YES</span></td>
 													
 												</tr>
-							
 								
 											</tbody>
 										</table>

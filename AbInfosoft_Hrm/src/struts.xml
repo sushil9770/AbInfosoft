@@ -108,8 +108,23 @@
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
+<action name="leave-add" method="leaveadd" class="com.abinfosoft.hrm.action.LeaveAction">
+<result name="success">jsp/leave/leave-add.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
 
 
+
+<!--  -->
+
+<!-- holiday action -->
+
+<action name="holiday-list" method="holidaylist" class="com.abinfosoft.hrm.action.HolidayAction">
+<result name="success">jsp/holidays/holidays-list.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
 
 <!--  -->
 

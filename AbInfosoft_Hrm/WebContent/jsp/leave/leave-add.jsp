@@ -83,73 +83,19 @@
 									 Leave Management
 								</li>
 								<li class="active">
-									 Leave List
+									Add Leave 
 								</li>
 								
 							</ol>
 							<div class="page-header">
-								<h1>Leave List  <small>overview &amp; Details </small></h1>
+								<h1>Add Leave   <small>overview &amp; Details </small></h1>
 							</div>
 							<!-- end: PAGE TITLE & BREADCRUMB -->
 							
 							
 							
 							
-							<div class="panel panel-default">
-								<!-- <div class="panel-heading">
-									<i class="fa fa-external-link-square"></i>
-									Employee Information
-									<div class="panel-tools">
-										<a class="btn btn-xs btn-link panel-collapse collapses" href="#">
-										</a>
-										<a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
-											<i class="fa fa-wrench"></i>
-										</a>
-										<a class="btn btn-xs btn-link panel-refresh" href="#">
-											<i class="fa fa-refresh"></i>
-										</a>
-										<a class="btn btn-xs btn-link panel-expand" href="#">
-											<i class="fa fa-resize-full"></i>
-										</a>
-										<a class="btn btn-xs btn-link panel-close" href="#">
-											<i class="fa fa-times"></i>
-										</a>
-									</div>
-								</div> -->
-								<div class="panel-body">
-									
-									
-									
-									<form action="#" role="form" id="form" novalidate="novalidate">
-										<div class="row">
-											<div class="col-md-12">
-												<div class="errorHandler alert alert-danger no-display">
-													<i class="fa fa-times-sign"></i> You have some form errors. Please check below.
-												</div>
-												<div class="successHandler alert alert-success no-display">
-													<i class="fa fa-ok"></i> Your form validation is successful!
-												</div>
-											</div>
-											<div class="col-md-4">
-												
-												
-												
-												<div class="form-group">
-												
-													<a href="leave-add.action" type="button" class="btn btn-teal">
-											Add Leave
-										</a>
-												</div>
-												
-												
-											</div>
-											
-										</div>
-										
-										
-									</form>
-								</div>
-							</div>
+							
 							
 							
 							
@@ -161,7 +107,7 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<i class="fa fa-external-link-square"></i>
-									Responsive Table
+									Add Leave
 									<div class="panel-tools">
 										<a class="btn btn-xs btn-link panel-collapse collapses" href="#">
 										</a>
@@ -180,72 +126,37 @@
 									</div>
 								</div>
 								<div class="panel-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover" id="sample-table-1" style="width: 500px">
-											<thead>
-												<tr>
-													<th class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></th>
-													<th>Leave Name</th>
+								<form action="#" role="form" id="form" novalidate="novalidate">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="errorHandler alert alert-danger no-display">
+													<i class="fa fa-times-sign"></i> You have some form errors. Please check below.
+												</div>
+												<div class="successHandler alert alert-success no-display">
+													<i class="fa fa-ok"></i> Your form validation is successful!
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label">
+														Leave Type <span class="symbol required"></span>
+													</label>
+													<input type="text"  class="form-control" id="firstname" name="firstname">
+												</div>
 												
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>Annual Leave</td>
-													
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>Sick Leave</td>
-												
-											
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>Leave for Emergency Services</td>
-													
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>Time Off with Compensation</td>
-													
-												</tr>
-							
-								
-											</tbody>
-										</table>
-										<div class="form-group">
-													<button type="button" class="btn btn-danger">
-											Delete  
+												<div class="form-group">
+													<button type="button" class="btn btn-teal">
+											Submit
 										</button>
 												</div>
-									</div>
+												
+												
+											</div>
+											
+										
+										
+									</form>
+									
 								</div>
 							</div>
 							<!-- end: RESPONSIVE TABLE PANEL -->

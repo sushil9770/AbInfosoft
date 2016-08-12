@@ -41,7 +41,7 @@
 						
 						
 						<li>
-							<a href="javascript:void(0)"><i class="clip-calendar"></i>
+							<a href="javascript:void(0)"><i class="clip-pencil"></i>
 								<span class="title"> Leave Management </span><i class="icon-arrow"></i>
 								<span class="selected"></span>
 							</a>
@@ -54,7 +54,7 @@
 								<li>
 									<a href="leave-request.action">
 										<span class="title"> Leave Request </span>
-									</a>
+								</a>
 								</li>
 								<li>
 									<a href="#">
@@ -68,7 +68,26 @@
 						
 						
 						<li>
-							<a href="javascript:void(0)"><i class="clip-pencil"></i>
+							<a href="javascript:void(0)"><i class="clip-calendar"></i></i>
+								<span class="title"> Event Management </span><i class="icon-arrow"></i>
+								<span class="selected"></span>
+							</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="holiday-list.action">
+										<span class="title">Holiday List / Add </span>
+									</a>
+								</li>
+								<li>
+									<a href="holiday-list.action">
+										<span class="title">Event List / Add </span>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)"> <i class="clip-bars"></i>
 								<span class="title"> Salary Management </span><i class="icon-arrow"></i>
 								<span class="selected"></span>
 							</a>
@@ -86,9 +105,10 @@
 								
 							</ul>
 						</li>
+						
 						<li>
-							<a href="javascript:void(0)"><i class="fa fa-pencil"></i>
-								<span class="title"> Financial Report </span><i class="icon-arrow"></i>
+							<a href="javascript:void(0)"><i class="clip-clipboard"></i>
+								<span class="title">  Report Management </span><i class="icon-arrow"></i>
 								<span class="selected"></span>
 							</a>
 							<ul class="sub-menu">
