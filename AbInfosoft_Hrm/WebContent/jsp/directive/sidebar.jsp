@@ -47,13 +47,18 @@
 							</a>
 							<ul class="sub-menu">
 								<li>
-									<a href="#">
-										<span class="title">Leave List </span>
+									<a href="leave-list.action">
+										<span class="title">Leave List / Add </span>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<span class="title"> Add Leave </span>
+										<span class="title"> Leave Request </span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="title"> Leave Report </span>
 									</a>
 								</li>
 								

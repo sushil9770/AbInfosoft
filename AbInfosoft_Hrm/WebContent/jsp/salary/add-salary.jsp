@@ -50,7 +50,8 @@
 		<link rel="stylesheet" href="assets/plugins/summernote/build/summernote.css">
 		<!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 		<link rel="shortcut icon" href="favicon.ico" />
-	</head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+			</head>
 	<!-- end: HEAD -->
 	<!-- start: BODY -->
 	<body>
@@ -214,7 +215,7 @@
 								
 								
 								
-									<div class="table-responsive">
+									<div class="table-responsive" ng-app="myApp" ng-controller="customersCtrl">
 										<table class="table table-bordered table-hover" id="sample-table-1">
 											<thead>
 												<tr>
@@ -232,13 +233,13 @@
 											</thead>
 											<tbody>
 											
-											<s:iterator id ="data" value="#request.data" status="stat">
-												<tr>
+											
+												<tr ng-repeat="x in names">
 												<td class="center" >
-												<s:property value="#stat.index"/>
+												{{ x.id }}
 												<td>
 												<a href="#">
-												<s:property value="#data.employee_name"/>
+												{{ x.employee_name }}
 												</a></td>
 												<td>
 												<input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
@@ -252,7 +253,7 @@
 												<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
 									            </td>
 												</tr>
-												</s:iterator>
+											
 											    </tbody>
 										</table>
 										
@@ -339,3 +340,20 @@
 				FormElements.init();
 			});
 		</script>
+		
+		<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("http://localhost:8099/AbInfosoft_Hrm/getJSONResult.action")
+    .then(function (response) {$scope.names = response.data.list;});
+});
+</script>
+
+
+
+		
+		
+		</body>
+	<!-- end: BODY -->
+
+</html>

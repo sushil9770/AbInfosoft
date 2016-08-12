@@ -88,12 +88,20 @@
 </action>
 
 <action name="emp-profile" method="employeeprofile" class="com.abinfosoft.hrm.action.EmployeeAction">
-<result name="success">jsp/employee/employee_profile.jsp</result>
+<result name="success">jsp/employee/employee-profile.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
  
 
+
+<!-- leave action -->
+
+<action name="leave-list" method="leavelist" class="com.abinfosoft.hrm.action.LeaveAction">
+<result name="success">jsp/employee/leave-list.jsp</result>
+<result name="error" >jsp/dashboard.jsp</result>
+<result name="input">jsp/dashboard.jsp</result>
+</action>
 
 
 
@@ -101,7 +109,13 @@
 
 
 
-<action name="getJSONResult"
+<action name="getJSONResult" method="employee_list"
+           class="com.abinfosoft.hrm.action.JSONDataAction">
+       	   <result type="json" />
+      </action>
+      
+      
+      <action name="payment_slot" method="post_request"
            class="com.abinfosoft.hrm.action.JSONDataAction">
        	   <result type="json" />
       </action>

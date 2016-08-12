@@ -19,6 +19,8 @@ public class SalaryAction extends ActionSupport implements SessionAware,RequestA
 	private Map session;
 	private Map request;
 	
+	
+	
 	public Map getSession() {
 		return session;
 	}
