@@ -1,4 +1,4 @@
-package com.abinfosoft.hrm.action.one;
+package com.abinfosoft.hrm.action;
 
 
 

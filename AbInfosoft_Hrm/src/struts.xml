@@ -49,14 +49,14 @@
  
  
 
-<action name="login" method="login" class="com.abinfosoft.hrm.action.one.LoginAction">
+<action name="login" method="login" class="com.abinfosoft.hrm.action.LoginAction">
 <result name="admin-success">jsp/admin/dashboard.jsp</result>
 <result name="employee-success">jsp/employee/dashboard.jsp</result>
 <result name="error" >index.jsp</result>
 <result name="input">index.jsp</result>
 </action>
 
-<action name="dashboard" method="dashboard" class="com.abinfosoft.hrm.action.one.LoginAction">
+<action name="dashboard" method="dashboard" class="com.abinfosoft.hrm.action.LoginAction">
 <result name="success">jsp/dashboard.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
