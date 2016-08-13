@@ -23,17 +23,17 @@ DROP TABLE IF EXISTS `employee_salary`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `employee_salary` (
-  `ref_no` varchar(255) NOT NULL,
-  `amount_transfer` varchar(45) NOT NULL,
-  `date` datetime NOT NULL,
+  `ref_no` varchar(255) DEFAULT NULL,
+  `amount_transfer` varchar(45) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
   `bank` varchar(45) DEFAULT NULL,
   `description` varchar(1024) DEFAULT NULL,
   `deduction` varchar(45) DEFAULT NULL,
-  `id` int(11) NOT NULL,
-  `employee_table_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `emp_id` varchar(45) DEFAULT NULL,
+  `emp_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_employee_salary_employee_table_idx` (`employee_table_id`),
-  CONSTRAINT `fk_employee_salary_employee_table` FOREIGN KEY (`employee_table_id`) REFERENCES `employee_table` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `fk_employee_salary_employee_table_idx` (`emp_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -102,6 +102,32 @@ LOCK TABLES `expenses` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `user_credential`
+--
+
+DROP TABLE IF EXISTS `user_credential`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_credential` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `userrole` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_credential`
+--
+
+LOCK TABLES `user_credential` WRITE;
+/*!40000 ALTER TABLE `user_credential` DISABLE KEYS */;
+INSERT INTO `user_credential` VALUES (1,'admin@abinfosoft.com','demo123','admin'),(2,'emp@abinfosoft.com','demo123','employee');
+/*!40000 ALTER TABLE `user_credential` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping events for database 'abinfo_hrm'
 --
 
@@ -118,4 +144,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-08-10  9:55:57
+-- Dump completed on 2016-08-13 14:56:06

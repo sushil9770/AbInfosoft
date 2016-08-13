@@ -30,7 +30,7 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="pages_user_profile.html">
+									<a href="my-profile.action">
 										<i class="clip-user-2"></i>
 										&nbsp;My Profile
 									</a>
