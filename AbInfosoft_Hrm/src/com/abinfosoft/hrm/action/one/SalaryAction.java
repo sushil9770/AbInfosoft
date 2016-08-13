@@ -1,4 +1,4 @@
-package com.abinfosoft.hrm.action;
+package com.abinfosoft.hrm.action.one;
 
 import java.util.List;
 import java.util.Map;

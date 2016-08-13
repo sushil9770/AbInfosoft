@@ -1,4 +1,4 @@
-package com.abinfosoft.hrm.action;
+package com.abinfosoft.hrm.action.one;
 
 import java.util.Map;
 
@@ -7,7 +7,7 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class HolidayAction extends ActionSupport implements SessionAware,RequestAware{
+public class EventAction extends ActionSupport implements SessionAware,RequestAware{
 
 	
 
@@ -30,8 +30,14 @@ public class HolidayAction extends ActionSupport implements SessionAware,Request
 	}
 	
 	
+	public String eventlist()
+	{
+		return "success";
+		
+	}
 	
-	public String holidaylist()
+	
+	public String eventadd()
 	{
 		return "success";
 		
