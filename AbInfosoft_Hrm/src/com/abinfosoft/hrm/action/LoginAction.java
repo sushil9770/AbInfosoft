@@ -47,52 +47,64 @@ public class LoginAction extends ActionSupport implements SessionAware,RequestAw
 	private LoginDao dao;
 	
 	
-	public LoginAction() {
-		System.out.println("Login Action");
-	}
+	        public LoginAction() {
+		    System.out.println("Login Action");
+	        }
 	
 	
-	public String  login() {
-		try {
-			
-			
-			
-			
+	        public String  login() {
+		    try {
 			dao=new  LoginDaoImp();
 			UserCredentials userCredentials=dao.userlogin(username, password);
-				
 			if(userCredentials.getUsername()==null)
 			{
-				addActionMessage("You are not valid user!");
-				return "input";
+			addActionMessage("You are not valid user!");
+			return "input";
 			}else{
-				
-				if(userCredentials.getUserrole().equals("admin"))
-					return "admin-success";
-				else
-					return "employee-success";
+			if(userCredentials.getUserrole().equals("admin"))
+			return "admin-success";
+			else
+			return "employee-success";
 			}
-			
-		
-			
-		} catch (Exception e) {
-		System.out.println("Exception :"+e);
-		return "error";
-		}
-	    }
+		    } catch (Exception e) {
+		    System.out.println("Exception :"+e);
+		    return "error";
+		    }
+	        }
 	
-	
-	public String  dashboard() {
-		try {
-			
+	        
+	        
+	        public String  logout() {
+			try {
 			return "success";
-			
-		} catch (Exception e) {
-		System.out.println("Exception :"+e);
-		return "error";
-		}
-	    }
+			} catch (Exception e) {
+			System.out.println("Exception :"+e);
+			return "error";
+			}
+			}
+		
 	
+	       public String  admindashboard() {
+		   try {
+		   return "success";
+		   } catch (Exception e) {
+		   System.out.println("Exception :"+e);
+		   return "error";
+		   }
+	       }
+	       
+	       
+	       public String  empdashboard() {
+		   try {
+		   return "success";
+		   } catch (Exception e) {
+		   System.out.println("Exception :"+e);
+		   return "error";
+		   }
+		   }
+	       
+	       
+	     
 	
 	
 

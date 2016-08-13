@@ -52,7 +52,7 @@
 										&nbsp;Lock Screen </a>
 								</li>
 								<li>
-									<a href="login_example1.html">
+									<a href="logout.action">
 										<i class="clip-exit"></i>
 										&nbsp;Log Out
 									</a>

@@ -14,9 +14,23 @@
 					<!-- start: MAIN NAVIGATION MENU -->
 					<ul class="main-navigation-menu">
 						<li class="active open">
-							<a href="dashboard.action"><i class="clip-home-3"></i>
+							<a href="emp-dashboard.action"><i class="clip-home-3"></i>
 								<span class="title"> Dashboard </span><span class="selected"></span>
 							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><i class="clip-user-3"></i>
+								<span class="title"> My Profile </span><i class="icon-arrow"></i>
+								<span class="selected"></span>
+							</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="my-profile.action">
+										<span class="title">Profile Details </span>
+									</a>
+								</li>
+								
+							</ul>
 						</li>
 						
 						

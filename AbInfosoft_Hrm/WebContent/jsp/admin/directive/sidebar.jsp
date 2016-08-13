@@ -14,7 +14,7 @@
 					<!-- start: MAIN NAVIGATION MENU -->
 					<ul class="main-navigation-menu">
 						<li class="active open">
-							<a href="dashboard.action"><i class="clip-home-3"></i>
+							<a href="admin-dashboard.action"><i class="clip-home-3"></i>
 								<span class="title"> Dashboard </span><span class="selected"></span>
 							</a>
 						</li>
