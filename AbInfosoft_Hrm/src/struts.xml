@@ -63,32 +63,32 @@
 
 
 <action name="add-salary" method="add_salary" class="com.abinfosoft.hrm.action.SalaryAction">
-<result name="success">jsp/salary/add-salary.jsp</result>
+<result name="success">jsp/admin/salary/add-salary.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
 
 <action name="expense" method="expense" class="com.abinfosoft.hrm.action.SalaryAction">
-<result name="success">jsp/expense.jsp</result>
+<result name="success">jsp/admin/expense.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
 
 <action name="emp-list" method="employeelist" class="com.abinfosoft.hrm.action.EmployeeAction">
-<result name="success">jsp/employee/employee-list.jsp</result>
+<result name="success">jsp/admin/employee/employee-list.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
  
 
 <action name="emp-add" method="employeeadd" class="com.abinfosoft.hrm.action.EmployeeAction">
-<result name="success">jsp/employee/employee-add.jsp</result>
+<result name="success">jsp/admin/employee/employee-add.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
 
 <action name="emp-profile" method="employeeprofile" class="com.abinfosoft.hrm.action.EmployeeAction">
-<result name="success">jsp/employee/employee-profile.jsp</result>
+<result name="success">jsp/admin/employee/employee-profile.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
@@ -98,18 +98,18 @@
 <!-- leave action -->
 
 <action name="leave-request" method="leaverequest" class="com.abinfosoft.hrm.action.LeaveAction">
-<result name="success">jsp/leave/leave-request.jsp</result>
+<result name="success">jsp/admin/leave/leave-request.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
 
 <action name="leave-list" method="leavelist" class="com.abinfosoft.hrm.action.LeaveAction">
-<result name="success">jsp/leave/leave-list.jsp</result>
+<result name="success">jsp/admin/leave/leave-list.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
 <action name="leave-add" method="leaveadd" class="com.abinfosoft.hrm.action.LeaveAction">
-<result name="success">jsp/leave/leave-add.jsp</result>
+<result name="success">jsp/admin/leave/leave-add.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
@@ -121,7 +121,7 @@
 <!-- holiday action -->
 
 <action name="holiday-list" method="holidaylist" class="com.abinfosoft.hrm.action.HolidayAction">
-<result name="success">jsp/holidays/holidays-list.jsp</result>
+<result name="success">jsp/admin/holidays/holidays-list.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
@@ -132,13 +132,13 @@
 <!-- holiday action -->
 
 <action name="event-list" method="eventlist" class="com.abinfosoft.hrm.action.EventAction">
-<result name="success">jsp/event/event-list.jsp</result>
+<result name="success">jsp/admin/event/event-list.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
 
 <action name="event-add" method="eventadd" class="com.abinfosoft.hrm.action.EventAction">
-<result name="success">jsp/event/event-add.jsp</result>
+<result name="success">jsp/admin/event/event-add.jsp</result>
 <result name="error" >jsp/dashboard.jsp</result>
 <result name="input">jsp/dashboard.jsp</result>
 </action>
