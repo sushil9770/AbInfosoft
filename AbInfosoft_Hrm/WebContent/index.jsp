@@ -62,8 +62,14 @@ response.setDateHeader("Expires",0);
 				<p>
 					Please enter your name and password to log in.
 				</p>
-				<s:form action="login" cssClass="form-login">
+				<s:form action="login" cssClass="form-login" method="post">
 				
+				
+				<s:if test="hasActionMessages()">
+   <div class="welcome">
+      <s:actionmessage/>
+   </div>
+</s:if>
 				
 					<div class="errorHandler alert alert-danger no-display">
 						<i class="fa fa-remove-sign"></i> You have some form errors. Please check below.

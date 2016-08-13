@@ -48,10 +48,10 @@
 	<!-- start: BODY -->
 	<body>
 		
-		<c:import url="/jsp/directive/header.jsp"></c:import>
+		<c:import url="/jsp/admin/directive/header.jsp"></c:import>
 		<!-- start: MAIN CONTAINER -->
 		<div class="main-container">
-        <c:import url="/jsp/directive/sidebar.jsp"></c:import>
+        <c:import url="/jsp/admin/directive/sidebar.jsp"></c:import>
 
 			<!-- start: PAGE -->
 			<div class="main-content">

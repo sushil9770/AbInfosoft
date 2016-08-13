@@ -4,6 +4,7 @@
 
     
     <!DOCTYPE html>
+<!-- Template Name: Clip-One - Responsive Admin Template build with Twitter Bootstrap 3.x Version: 1.4 Author: ClipTheme -->
 <!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
 <!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
 <!--[if !IE]><!-->
@@ -12,7 +13,7 @@
 	<!-- start: HEAD -->
 	
 <head>
-		<title>AbInfosoft</title>
+		<title>AbInfosoft- Dashboard</title>
 		<!-- start: META -->
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
@@ -46,10 +47,10 @@
 	<!-- start: BODY -->
 	<body>
 		
-		<c:import url="directive/header.jsp"></c:import>
+		<c:import url="/jsp/admin/directive/header.jsp"></c:import>
 		<!-- start: MAIN CONTAINER -->
 		<div class="main-container">
-        <c:import url="directive/sidebar.jsp"></c:import>
+        <c:import url="/jsp/admin/directive/sidebar.jsp"></c:import>
 
 			<!-- start: PAGE -->
 			<div class="main-content">
@@ -57,9 +58,9 @@
 				<div class="container">
 					<!-- start: PAGE HEADER -->
 					<div class="row">
-						 <div class="col-sm-12">
+						<!-- <div class="col-sm-12">
 							
-						<!--	start: PAGE TITLE & BREADCRUMB -->
+							start: PAGE TITLE & BREADCRUMB
 							<ol class="breadcrumb">
 								<li>
 									<i class="clip-home-3"></i>
@@ -68,153 +69,21 @@
 									</a>
 								</li>
 								<li class="active">
-									 Financial Expenses
-								</li>
-								<li class="active">
-									 Salary
+									Dashboard
 								</li>
 								
 							</ol>
 							<div class="page-header">
-								<h1>Employee Salary  <small>overview &amp; Details </small></h1>
+								<h1>Dashboard <small>overview &amp; stats </small></h1>
 							</div>
-							<!-- end: PAGE TITLE & BREADCRUMB -->
-							
-							
-							
-							
-							<!-- start: RESPONSIVE TABLE PANEL -->
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<i class="fa fa-external-link-square"></i>
-									Responsive Table
-									<div class="panel-tools">
-										<a class="btn btn-xs btn-link panel-collapse collapses" href="#">
-										</a>
-										<a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
-											<i class="fa fa-wrench"></i>
-										</a>
-										<a class="btn btn-xs btn-link panel-refresh" href="#">
-											<i class="fa fa-refresh"></i>
-										</a>
-										<a class="btn btn-xs btn-link panel-expand" href="#">
-											<i class="fa fa-resize-full"></i>
-										</a>
-										<a class="btn btn-xs btn-link panel-close" href="#">
-											<i class="fa fa-times"></i>
-										</a>
-									</div>
-								</div>
-								<div class="panel-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover" id="sample-table-1">
-											<thead>
-												<tr>
-													<th class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></th>
-													<th>Emp Name</th>
-													<th>Amount</th>
-													<th><i class="fa fa-time"></i>Date</th>
-													<th> Ref No </th>
-													<th>Bank</th>
-													<th>Description</th>
-													<th>Leaves/Deduction</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>
-													<a href="#">
-														Sanjeev
-													</a></td>
-													<td>$45</td>
-													<td>3,330</td>
-													<td>Feb 13</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td><span class="label label-sm label-warning">Expiring</span></td>
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>
-													<a href="#">
-														Prakash
-													</a></td>
-													<td>$70</td>
-													<td>3,330</td>
-													<td>Jen 15</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td><span class="label label-sm label-success">Registered</span></td>
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>
-													<a href="#">
-														Vaibhav
-													</a></td>
-													<td>$25</td>
-													<td>3,330</td>
-													<td>Mar 09</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td><span class="label label-sm label-danger">Expired</span></td>
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>
-													<a href="#">
-														Vijay
-													</a></td>
-													<td>$50</td>
-													<td>3,330</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td>Feb 10</td>
-													<td><span class="label label-sm label-inverse">Flagged</span></td>
-												</tr>
-												
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						
-						
-						
-						
-						
+							end: PAGE TITLE & BREADCRUMB
+						</div> -->
 					</div>
 					<!-- end: PAGE HEADER -->
 					<!-- start: PAGE CONTENT -->
-					
+					<div class="row" style="padding-left: 15px;padding-top: 15px">
+					<img alt="" src="assets/images/023441728_prevstill.jpeg" width="100%" height="500px">
+					</div>
 					
 					
 					

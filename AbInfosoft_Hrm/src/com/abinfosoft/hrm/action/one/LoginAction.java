@@ -4,8 +4,13 @@ package com.abinfosoft.hrm.action.one;
 
 import java.util.Map;
 import org.apache.log4j.Logger;
+import org.apache.struts2.components.ActionError;
 import org.apache.struts2.interceptor.RequestAware;
 import org.apache.struts2.interceptor.SessionAware;
+
+import com.abinfosoft.hrm.dao.LoginDao;
+import com.abinfosoft.hrm.dao.imp.LoginDaoImp;
+import com.abinfosoft.hrm.dto.UserCredentials;
 import com.opensymphony.xwork2.ActionSupport;
 
 
@@ -39,7 +44,7 @@ public class LoginAction extends ActionSupport implements SessionAware,RequestAw
 	
 	private String username;
 	private String password;
-	
+	private LoginDao dao;
 	
 	
 	public LoginAction() {
@@ -50,7 +55,25 @@ public class LoginAction extends ActionSupport implements SessionAware,RequestAw
 	public String  login() {
 		try {
 			
-			return "success";
+			
+			
+			
+			dao=new  LoginDaoImp();
+			UserCredentials userCredentials=dao.userlogin(username, password);
+				
+			if(userCredentials.getUsername()==null)
+			{
+				addActionMessage("You are not valid user!");
+				return "input";
+			}else{
+				
+				if(userCredentials.getUserrole().equals("admin"))
+					return "admin-success";
+				else
+					return "employee-success";
+			}
+			
+		
 			
 		} catch (Exception e) {
 		System.out.println("Exception :"+e);

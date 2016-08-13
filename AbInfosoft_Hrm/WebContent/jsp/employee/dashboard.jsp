@@ -47,11 +47,13 @@
 	<!-- start: BODY -->
 	<body>
 		
-		<c:import url="directive/header.jsp"></c:import>
+		
+		<c:import url="/jsp/employee/directive/header.jsp"></c:import>
 		<!-- start: MAIN CONTAINER -->
 		<div class="main-container">
-        <c:import url="directive/sidebar.jsp"></c:import>
+        <c:import url="/jsp/employee/directive/sidebar.jsp"></c:import>
 
+	
 			<!-- start: PAGE -->
 			<div class="main-content">
 				
@@ -82,7 +84,7 @@
 					<!-- end: PAGE HEADER -->
 					<!-- start: PAGE CONTENT -->
 					<div class="row" style="padding-left: 15px;padding-top: 15px">
-					<img alt="" src="assets/images/023441728_prevstill.jpeg" width="100%" height="500px">
+					<img alt="" src="assets/images/employee.jpg" width="100%" height="500px">
 					</div>
 					
 					
