@@ -25,7 +25,7 @@ public class DBServiceHandler  {
     public static Connection getConnection() throws SQLException {
 	      
   	    
-    	String dbName="ABINFO_HRM";
+    	String dbName="webapp";
     	
         Properties props = new Properties();
          props.setProperty("user", "root");

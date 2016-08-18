@@ -1,4 +1,4 @@
-package com.abinfosoft.hrm.action.one;
+/*package com.abinfosoft.hrm.action.one;
 
 import java.util.List;
 import java.util.Map;
@@ -8,7 +8,7 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.abinfosoft.hrm.dao.EmployeeSalaryDao;
 import com.abinfosoft.hrm.dao.imp.EmployeeSalaryDaoImp;
-import com.abinfosoft.hrm.dto.EmployeeDetails;
+import com.abinfosoft.hrm.dto.EmpDetails;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class SalaryAction extends ActionSupport implements SessionAware,RequestAware {
@@ -45,7 +45,7 @@ public class SalaryAction extends ActionSupport implements SessionAware,RequestA
 		try {
 			
 			EmployeeSalaryDao dao=new EmployeeSalaryDaoImp();
-			List<EmployeeDetails> list=  dao.getAllEmployeeDetails();
+			List<EmpDetails> list=  dao.getAllEmployeeDetails();
 			request.put("data", list);
 			return "success";
 			
@@ -68,3 +68,4 @@ public class SalaryAction extends ActionSupport implements SessionAware,RequestA
 	}
 
 }
+*/

@@ -1,13 +1,14 @@
-package com.abinfosoft.hrm.dao;
+/*package com.abinfosoft.hrm.dao;
 
 import java.util.List;
 
-import com.abinfosoft.hrm.dto.EmployeeDetails;
+import com.abinfosoft.hrm.dto.EmpDetails;
 
 public interface EmployeeSalaryDao {
 	
 	
-	public List<EmployeeDetails>getAllEmployeeDetails();
+	public List<EmpDetails>getAllEmployeeDetails();
 	
 
 }
+*/

@@ -32,6 +32,25 @@
 								
 							</ul>
 						</li>
+						<li>
+							<a href="javascript:void(0)"><i class="fa fa-calendar"></i>
+								<span class="title"> My Leave </span><i class="icon-arrow"></i>
+								<span class="selected"></span>
+							</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="my-profile.action">
+										<span class="title">Leave Details </span>
+									</a>
+								</li>
+								<li>
+									<a href="my-profile.action">
+										<span class="title">Apply Leave </span>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
 						
 						
 						

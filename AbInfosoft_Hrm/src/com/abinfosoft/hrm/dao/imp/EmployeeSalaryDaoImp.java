@@ -1,4 +1,4 @@
-package com.abinfosoft.hrm.dao.imp;
+/*package com.abinfosoft.hrm.dao.imp;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -8,14 +8,14 @@ import java.util.List;
 
 import com.abinfosoft.hrm.dao.EmployeeSalaryDao;
 import com.abinfosoft.hrm.db.DBServiceHandler;
-import com.abinfosoft.hrm.dto.EmployeeDetails;
+import com.abinfosoft.hrm.dto.EmpDetails;
 
 public class EmployeeSalaryDaoImp implements EmployeeSalaryDao {
 
 	@Override
-	public List<EmployeeDetails> getAllEmployeeDetails() {
+	public List<EmpDetails> getAllEmployeeDetails() {
 		
-		 List<EmployeeDetails> list=new ArrayList<EmployeeDetails>();
+		 List<EmpDetails> list=new ArrayList<EmpDetails>();
 		 
 		 try {
 			 
@@ -27,7 +27,7 @@ public class EmployeeSalaryDaoImp implements EmployeeSalaryDao {
 			 rs = st.executeQuery("select *  from employee_table");
 			 while(rs.next())
 			 {
-				EmployeeDetails employeeDetails=new EmployeeDetails();
+				EmpDetails employeeDetails=new EmpDetails();
 				employeeDetails.setEmployee_id(rs.getString("employee_id"));
 				employeeDetails.setEmployee_name(rs.getString("employee_name"));
 				employeeDetails.setEmployee_email(rs.getString("employee_email"));
@@ -43,4 +43,9 @@ public class EmployeeSalaryDaoImp implements EmployeeSalaryDao {
 			 }
 		     return list;
 	         }
-             }
+
+	
+	
+	
+           }
+*/

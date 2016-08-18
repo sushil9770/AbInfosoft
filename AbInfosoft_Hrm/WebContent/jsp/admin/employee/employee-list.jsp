@@ -43,6 +43,7 @@
 		<link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
 		<!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 		<link rel="shortcut icon" href="favicon.ico" />
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	</head>
 	<!-- end: HEAD -->
 	<!-- start: BODY -->
@@ -226,8 +227,8 @@
 									</div>
 								</div>
 								<div class="panel-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover" id="sample-table-1">
+									<div class="table-responsive" ng-app="myApp" ng-controller="customersCtrl">
+										<table class="table table-bordered table-hover" id="sample-table-1" >
 											<thead>
 												<tr>
 													<th class="center">
@@ -244,24 +245,36 @@
 													<th>Employment Status</th>
 												</tr>
 											</thead>
-											<tbody>
-												<tr>
+											<tbody ng-repeat="x in names">
+												<tr ng-repeat="a in x.empPersonalDetails" >
+												
+												
+												
 													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>
-													<a href="emp-profile.action">
-														Sushil Kumar
-													</a></td>
-													<td>EMP-0031</td>
+													1
+													</td>
+													<td >
+													
+													
+												
+												<a href="emp-profile.action">
+														{{ a.firstname }} {{ a.lastname }} 
+														</a>
+														
+													
+													</td>
+													<td><div ng-repeat="b in x.empEmploymentDetails">
+												   
+														{{ b.empid }}
+														
+														</div></td>
 													<td>Praval Srivastava </td>
 													<td>Permanent</td>
 													<td>Software Developer </td>
 													<td><span class="label label-sm label-success">Active</span></td>
-												</tr>
+													</tr>
+												
+												
 												<tr>
 													<td class="center">
 													<div class="checkbox-table">
@@ -383,7 +396,13 @@
 				Index.init();
 			});
 		</script>
-		
+		<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("http://localhost:8099/AbInfosoft_Hrm/getJSONResult.action")
+    .then(function (response) {$scope.names = response.data.list;});
+});
+</script>
 		
 		
 	</body>

@@ -1,10 +1,10 @@
-package com.abinfosoft.hrm.action.one;
+/*package com.abinfosoft.hrm.action.one;
 
 import java.util.List;
 
 import com.abinfosoft.hrm.dao.EmployeeSalaryDao;
 import com.abinfosoft.hrm.dao.imp.EmployeeSalaryDaoImp;
-import com.abinfosoft.hrm.dto.EmployeeDetails;
+import com.abinfosoft.hrm.dto.EmpDetails;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -14,7 +14,7 @@ public class JSONDataAction extends ActionSupport {
 
 	private String payment_slot;
 	
-	List<EmployeeDetails> list;
+	List<EmpDetails> list;
 	EmployeeSalaryDao dao;
 	
 
@@ -25,11 +25,11 @@ public class JSONDataAction extends ActionSupport {
     return Action.SUCCESS;
         }
 
-	public List<EmployeeDetails> getList() {
+	public List<EmpDetails> getList() {
 		return list;
 	}
 
-	public void setList(List<EmployeeDetails> list) {
+	public void setList(List<EmpDetails> list) {
 		this.list = list;
 	}
 
@@ -59,3 +59,4 @@ public class JSONDataAction extends ActionSupport {
 	}
 	
 	
+*/

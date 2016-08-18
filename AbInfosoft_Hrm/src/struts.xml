@@ -78,11 +78,11 @@
 </action>
 
 
-<action name="add-salary" method="add_salary" class="com.abinfosoft.hrm.action.one.SalaryAction">
+<!-- <action name="add-salary" method="add_salary" class="com.abinfosoft.hrm.action.one.SalaryAction">
 <result name="success">jsp/admin/salary/add-salary.jsp</result>
 <result name="error" >jsp/admin/dashboard.jsp</result>
 <result name="input">jsp/admin/dashboard.jsp</result>
-</action>
+</action> -->
 
 
 <action name="emp-list" method="employeelist" class="com.abinfosoft.hrm.action.one.EmployeeAction">
@@ -169,15 +169,15 @@
 
 
 <action name="getJSONResult" method="employee_list"
-           class="com.abinfosoft.hrm.action.one.JSONDataAction">
+           class="com.abinfosoft.hrm.action.jsone.OrganizationAction">
        	   <result type="json" />
       </action>
       
-      
+     <!--  
       <action name="payment_slot" method="post_request"
            class="com.abinfosoft.hrm.action.one.JSONDataAction">
        	   <result type="json" />
-      </action>
+      </action> -->
 
 
 </package>

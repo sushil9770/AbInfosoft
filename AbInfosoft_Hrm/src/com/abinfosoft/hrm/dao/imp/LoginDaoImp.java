@@ -22,7 +22,7 @@ public class LoginDaoImp implements LoginDao{
 			
 		con=DBServiceHandler.getConnection();
 		st = con.createStatement();
-		rs = st.executeQuery("select *  from user_credential  where username='"+username+"' and password = '"+password+"'");
+		rs = st.executeQuery("select *  from user_credentials  where username='"+username+"' and password = '"+password+"'");
 		if (rs.next()) {
 			 userCredentials.setId(rs.getInt("id"));
 			 userCredentials.setUsername(rs.getString("username"));
