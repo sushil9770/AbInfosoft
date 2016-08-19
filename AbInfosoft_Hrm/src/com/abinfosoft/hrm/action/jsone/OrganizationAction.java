@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.abinfosoft.hrm.dao.OrganizationDao;
 import com.abinfosoft.hrm.dao.imp.OrganizationDaoImp;
-import com.abinfosoft.hrm.dto.jsone.EmpPersonalEmployment;
+import com.abinfosoft.hrm.virtual.data.holder.EmpPersonalEmployment;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.Action;
 

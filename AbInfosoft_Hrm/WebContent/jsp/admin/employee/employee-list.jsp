@@ -3,8 +3,7 @@
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
      <%@ taglib uri="/struts-tags" prefix="s" %>
 
-    
-    <!DOCTYPE html>
+ <!DOCTYPE html>
 <!-- Template Name: Clip-One - Responsive Admin Template build with Twitter Bootstrap 3.x Version: 1.4 Author: ClipTheme -->
 <!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
 <!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
@@ -13,8 +12,9 @@
 	<!--<![endif]-->
 	<!-- start: HEAD -->
 	
+<!-- Mirrored from www.cliptheme.com/preview/admin/clip-one/form_elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2016 05:18:55 GMT -->
 <head>
-		<title>AbInfosoft</title>
+		<title>Clip-One - Responsive Admin Template</title>
 		<!-- start: META -->
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
@@ -40,10 +40,16 @@
 		<![endif]-->
 		<!-- end: MAIN CSS -->
 		<!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
-		<link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
+		<link rel="stylesheet" href="assets/plugins/select2/select2.css">
+		<link rel="stylesheet" href="assets/plugins/datepicker/css/datepicker.css">
+		<link rel="stylesheet" href="assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+		<link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css">
+		<link rel="stylesheet" href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css">
+		<link rel="stylesheet" href="assets/plugins/jQuery-Tags-Input/jquery.tagsinput.css">
+		<link rel="stylesheet" href="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css">
+		<link rel="stylesheet" href="assets/plugins/summernote/build/summernote.css">
 		<!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 		<link rel="shortcut icon" href="favicon.ico" />
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	</head>
 	<!-- end: HEAD -->
 	<!-- start: BODY -->
@@ -111,86 +117,82 @@
 									
 									
 									
-									<form action="#" role="form" id="form" novalidate="novalidate">
-										<div class="row">
-											<div class="col-md-12">
-												<div class="errorHandler alert alert-danger no-display">
-													<i class="fa fa-times-sign"></i> You have some form errors. Please check below.
-												</div>
-												<div class="successHandler alert alert-success no-display">
-													<i class="fa fa-ok"></i> Your form validation is successful!
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group">
-													<label class="control-label">
-														Employee Name <span class="symbol required"></span>
-													</label>
-													<input type="text"  class="form-control" id="firstname" name="firstname">
-												</div>
-												<div class="form-group">
-													<label class="control-label">
-														Supervisor Name <span class="symbol required"></span>
-													</label>
-													<input type="text"  class="form-control" id="lastname" name="lastname">
-												</div>
-												<div class="form-group">
-													<button type="button" class="btn btn-teal"><i class="clip-search-2"></i>
-											Search
-										</button>
-												</div>
-												
-												
-											</div>
-											<div class="col-md-4">
-												<div class="form-group connected-group">
-												
-												
-												
-													<label class="control-label">
-														Employee Id <span class="symbol required"></span>
-													</label>
-													<input type="text"  class="form-control" id="firstname" name="firstname">
+									   <form action="emp-search" role="form" id="form" novalidate="novalidate" method="post">
+									   <div class="row">
+									   <div class="col-md-12">
+									   <div class="errorHandler alert alert-danger no-display">
+									   <i class="fa fa-times-sign"></i> You have some form errors. Please check below.
+									   </div>
+								       <div class="successHandler alert alert-success no-display">
+									   <i class="fa fa-ok"></i> Your form validation is successful!
+									   </div>
+									   </div>
 											
-												</div>
-												<div class="form-group">
-													<label class="control-label">
-														Employment Status <span class="symbol required"></span>
-													</label>
-													<select class="form-control" id="lastname">
-													 <option value="" disabled selected>Select </option>
-													<option>Active </option>
-													<option>In-Active </option>
-													<option>All </option>
-													</select>
-												</div>
+										<div class="col-md-4">
+										<div class="form-group">
+										<label for="form-field-select-3">
+										Employee Name
+										</label>
+										<s:select id="form-field-select-3" cssClass="form-control search-select"   headerKey="-1"
+                                        headerValue="Select"  list="empnamelist" name="empname" value="Select"  />
+									    </div>
+									
+									
+
+													
+										<div class="form-group">
+										<label class="control-label">
+										Supervisor Name 
+										</label>
+										<s:select id="form-field-select-3" cssClass="form-control search-select"   headerKey="-1"
+                                        headerValue="Select"  list="empsupervisorplist" name="empsupervisor" value="Select"  />
+									    </div>
+										<div class="form-group">
+										<input type="submit" value="Search" class="btn btn-teal">
+										</div>
+										</div>
+										
+										
+										<div class="col-md-4">
+										<div class="form-group connected-group">
+										<label class="control-label">
+										Employee Id 
+										</label>
+										<s:select id="form-field-select-3" cssClass="form-control search-select"   headerKey="-1"
+                                        headerValue="Select"  list="empidlist" name="empid" value="Select"  />
+									    </div>
+										<div class="form-group">
+										<label class="control-label">
+										 Designation 
+										</label>
+										<s:select id="form-field-select-3" cssClass="form-control search-select"   headerKey="-1"
+                                        headerValue="Select"  list="empdesignationlist" name="empdesignation" value="Select"  />
+									    </div>
 												
-												
-											</div>
-											<div class="col-md-4">
-												<div class="form-group">
-													<label class="control-label">
-														Employment Type <span class="symbol required"></span>
-													</label>
-													<select class="form-control" id="lastname">
-													 <option value="" disabled selected>Select </option>
-													<option>Permanent </option>
-													<option>Contract </option>
-													</select>
-												</div>
-												<div class="form-group">
-													<label class="control-label">
-														Job Title <span class="symbol required"></span>
-													</label>
-													<select class="form-control" id="lastname">
-													 <option value="" disabled selected>Select </option>
-													<option>Project Manger </option>
-													<option>Software Developer </option>
-													<option>Software Trainee </option>
-													</select>
-												</div>
-												
-											</div>
+										</div>
+										<div class="col-md-4">
+										<div class="form-group">
+										<label class="control-label">
+										Employment Type 
+										</label>
+										<select class="form-control" id="lastname" name="employmenttype">
+										<option value="" disabled selected>Select </option>
+										<option value="Permanent">Permanent </option>
+										<option value="Contract">Contract </option>
+										</select>
+										</div>
+										<div class="form-group">
+										<label class="control-label">
+										Employment Status
+										</label>
+										<select class="form-control" id="lastname" name="empstatus">
+										<option value="" disabled selected>Select </option>
+										<option value="Active">Active </option>
+										<option value="In-Active">In-Active </option>
+										<option value="All">All </option>
+										</select>
+										</div> 
+										</div>
 										</div>
 										
 										
@@ -227,7 +229,7 @@
 									</div>
 								</div>
 								<div class="panel-body">
-									<div class="table-responsive" ng-app="myApp" ng-controller="customersCtrl">
+									<div class="table-responsive">
 										<table class="table table-bordered table-hover" id="sample-table-1" >
 											<thead>
 												<tr>
@@ -241,40 +243,14 @@
 													<th>Employee Id </th>
 													<th>Supervisor Name </th>
 													<th>Employment Type</th>
-													<th> Job Title  </th>
+													<th>Employee Designation  </th>
+													<th>Company Name</th>
 													<th>Employment Status</th>
 												</tr>
 											</thead>
-											<tbody ng-repeat="x in names">
-												<tr ng-repeat="a in x.empPersonalDetails" >
+											<tbody >
 												
-												
-												
-													<td class="center">
-													1
-													</td>
-													<td >
-													
-													
-												
-												<a href="emp-profile.action">
-														{{ a.firstname }} {{ a.lastname }} 
-														</a>
-														
-													
-													</td>
-													<td><div ng-repeat="b in x.empEmploymentDetails">
-												   
-														{{ b.empid }}
-														
-														</div></td>
-													<td>Praval Srivastava </td>
-													<td>Permanent</td>
-													<td>Software Developer </td>
-													<td><span class="label label-sm label-success">Active</span></td>
-													</tr>
-												
-												
+												<s:iterator id ="data" value="#request.data">
 												<tr>
 													<td class="center">
 													<div class="checkbox-table">
@@ -284,32 +260,24 @@
 													</div></td>
 													<td>
 													<a href="emp-profile.action">
-														Parag Sarkar
+														<s:property value="#data.firstname"/> <s:property value="#data.lastname"/>
 													</a></td>
-													<td>EMP-0021</td>
-													<td>Praval Srivastava </td>
-													<td>Permanent</td>
-													<td>Software Developer </td>
-													<td><span class="label label-sm label-warning">In-Active</span></td>
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
+													<td><s:property value="#data.empid"/></td>
+													<td><s:property value="#data.supervisorname"/></td>
+													<td><s:property value="#data.jobtype"/></td>
+													<td><s:property value="#data.designation"/> </td>
+													<td><s:property value="#data.companyname"/> </td>
 													<td>
-													<a href="emp-profile.action">
-														Shantanu Biswal
-													</a></td>
-													<td>EMP-0045</td>
-													<td>Praval Srivastava </td>
-													<td>Permanent</td>
-													<td>Software Developer </td>
-													<td><span class="label label-sm label-success">Active</span></td>
+													<s:if test="%{#data.status=='Active'}">
+	                                                <span class="label label-sm label-success">Active</span>
+                                                    </s:if>
+                                                    <s:elseif test="%{#data.status=='In-Active'}">
+                                                    <span class="label label-sm label-warning">In-Active</span>
+                                                    </s:elseif>
+													
+													</td>
 												</tr>
-								
+								                </s:iterator>
 											</tbody>
 										</table>
 										<div class="form-group">
@@ -354,11 +322,7 @@
 				<span class="go-top"><i class="clip-chevron-up"></i></span>
 			</div>
 		</div>
-		<!-- end: FOOTER -->
-		<!-- start: RIGHT SIDEBAR -->
-		
 		<!-- end: RIGHT SIDEBAR -->
-		
 		<!-- start: MAIN JAVASCRIPTS -->
 		<!--[if lt IE 9]>
 		<script src="assets/plugins/respond.min.js"></script>
@@ -381,31 +345,28 @@
 		<script src="assets/js/main.js"></script>
 		<!-- end: MAIN JAVASCRIPTS -->
 		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-		<script src="assets/plugins/flot/jquery.flot.js"></script>
-		<script src="assets/plugins/flot/jquery.flot.pie.js"></script>
-		<script src="assets/plugins/flot/jquery.flot.resize.min.js"></script>
-		<script src="assets/plugins/jquery.sparkline/jquery.sparkline.js"></script>
-		<script src="assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-		<script src="assets/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-		<script src="assets/plugins/fullcalendar/fullcalendar/fullcalendar.js"></script>
-		<script src="assets/js/index.js"></script>
+		<script src="assets/plugins/jquery-inputlimiter/jquery.inputlimiter.1.3.1.min.js"></script>
+		<script src="assets/plugins/autosize/jquery.autosize.min.js"></script>
+		<script src="assets/plugins/select2/select2.min.js"></script>
+		<script src="assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+		<script src="assets/plugins/jquery-maskmoney/jquery.maskMoney.js"></script>
+		<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+		<script src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+		<script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+		<script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+		<script src="assets/plugins/bootstrap-colorpicker/js/commits.js"></script>
+		<script src="assets/plugins/jQuery-Tags-Input/jquery.tagsinput.js"></script>
+		<script src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+		<script src="assets/plugins/summernote/build/summernote.min.js"></script>
+		<script src="assets/plugins/ckeditor/ckeditor.js"></script>
+		<script src="assets/plugins/ckeditor/adapters/jquery.js"></script>
+		<script src="assets/js/form-elements.js"></script>
 		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 		<script>
 			jQuery(document).ready(function() {
 				Main.init();
-				Index.init();
+				FormElements.init();
 			});
 		</script>
-		<script>
-var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-    $http.get("http://localhost:8099/AbInfosoft_Hrm/getJSONResult.action")
-    .then(function (response) {$scope.names = response.data.list;});
-});
-</script>
-		
-		
 	</body>
-	<!-- end: BODY -->
-
-</html>

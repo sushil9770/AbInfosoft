@@ -1,4 +1,4 @@
-package com.abinfosoft.hrm.dto.jsone;
+package com.abinfosoft.hrm.virtual.data.holder;
 
 import java.util.List;
 

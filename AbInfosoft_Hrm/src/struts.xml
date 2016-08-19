@@ -104,6 +104,12 @@
 <result name="input">jsp/admin/dashboard.jsp</result>
 </action>
  
+ <action name="emp-search" method="employeesearch" class="com.abinfosoft.hrm.action.one.EmployeeAction">
+<result name="success">jsp/admin/employee/employee-list.jsp</result>
+<result name="error" >jsp/admin/dashboard.jsp</result>
+<result name="input">jsp/admin/dashboard.jsp</result>
+</action>
+ 
 
 
 <!-- leave action -->
