@@ -146,7 +146,7 @@
 
 <!--  -->
 
-<!-- holiday action -->
+<!-- holiday action admin -->
 
 <action name="holiday-list" method="holidaylist" class="com.abinfosoft.hrm.action.one.HolidayAction">
 <result name="success">jsp/admin/holidays/holidays-list.jsp</result>
@@ -154,6 +154,20 @@
 <result name="input">jsp/admin/dashboard.jsp</result>
 </action>
 
+
+
+<action name="add-holidays" method="add_holidays" class="com.abinfosoft.hrm.action.one.HolidayAction">
+<result name="success">jsp/admin/holidays/add-holidays.jsp</result>
+<result name="error" >jsp/admin/dashboard.jsp</result>
+<result name="input">jsp/admin/dashboard.jsp</result>
+</action>
+
+
+<action name="save-holiday-details" method="save_holiday_details" class="com.abinfosoft.hrm.action.one.HolidayAction">
+<result name="success">jsp/admin/holidays/holidays-list.jsp</result>
+<result name="error" >jsp/admin/dashboard.jsp</result>
+<result name="input">jsp/admin/dashboard.jsp</result>
+</action>
 <!--  -->
 
 

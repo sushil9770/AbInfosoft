@@ -29,7 +29,7 @@ public class DBServiceHandler  {
     	
         Properties props = new Properties();
          props.setProperty("user", "root");
-         props.setProperty("password", "admin");
+         props.setProperty("password", "root");
          String url = "jdbc:mysql://localhost/" + dbName;
          Connection con = DriverManager.getConnection(url, props);
 

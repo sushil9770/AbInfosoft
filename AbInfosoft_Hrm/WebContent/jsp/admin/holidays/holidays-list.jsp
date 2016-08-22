@@ -120,7 +120,7 @@
 									
 									
 									
-									<form action="#" role="form" id="form" novalidate="novalidate">
+									<form action="add-holidays" role="form" id="form" novalidate="novalidate">
 										<div class="row">
 											<div class="col-md-12">
 												<div class="errorHandler alert alert-danger no-display">
@@ -133,7 +133,7 @@
 											<div class="col-md-4">
 												<div class="form-group">
 													<label class="control-label">
-														Holiday title <span class="symbol required"></span>
+														Holiday Title <span class="symbol required"></span>
 													</label>
 													<input type="text"  class="form-control" id="firstname" name="firstname">
 												</div>
@@ -148,9 +148,9 @@
 												
 												<div class="col-md-4 ">
 												<div class="form-group">
-													<button type="button" class=" btn btn-primary" style="width: 90%">
-											Add 
-										</button>
+													<input type="submit" class=" btn btn-primary" value="Add"  style="width: 90%">
+										 
+										
 												</div>
 												</div>
 												
