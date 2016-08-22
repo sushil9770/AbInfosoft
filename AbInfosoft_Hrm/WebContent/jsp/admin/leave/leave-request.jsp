@@ -258,6 +258,7 @@
 												</tr>
 											</thead>
 											<tbody>
+											<s:iterator id ="data" value="#request.data" status="incr">
 												<tr>
 													<td class="center">
 													<div class="checkbox-table">
@@ -265,7 +266,7 @@
 															<input type="checkbox" class="flat-grey">
 														</label>
 													</div></td>
-													<td>2016-08-08</td>
+													<td><s:property value="#data.fromdate"/></td>
 													<td>
 													<a href="emp-profile.action">
 														Sushil Kumar
@@ -286,6 +287,7 @@
 									</div>
 													</td>
 												</tr>
+												</s:iterator>
 												<tr>
 													<td class="center">
 													<div class="checkbox-table">

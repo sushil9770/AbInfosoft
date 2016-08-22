@@ -9,6 +9,7 @@ import java.util.List;
 
 import com.abinfosoft.hrm.dao.LeaveDao;
 import com.abinfosoft.hrm.db.DBServiceHandler;
+import com.abinfosoft.hrm.dto.LeaveRequestDetails;
 import com.abinfosoft.hrm.dto.LeaveTypeDetails;
 
 public class LeaveDaoImp implements LeaveDao{
@@ -68,6 +69,38 @@ public class LeaveDaoImp implements LeaveDao{
 			System.out.println("Exception :"+e);
 		}
 		
+	}
+
+	@Override
+	public List<LeaveRequestDetails> getAllLeaveRequestDetails() {
+		List<LeaveRequestDetails> list=new ArrayList<LeaveRequestDetails>();
+		try {
+			Connection con=null;
+			Statement st=null;
+			ResultSet rs=null;
+			con=DBServiceHandler.getConnection();
+			st = con.createStatement();
+			rs = st.executeQuery("select * from emp_leave_details");
+			while (rs.next()) {
+				
+				LeaveRequestDetails leaveRequestDetails=new LeaveRequestDetails();
+				leaveRequestDetails.setId(rs.getInt("id"));
+				leaveRequestDetails.setFromdate(rs.getDate("fromdate"));
+				leaveRequestDetails.setTodate(rs.getDate("todate"));
+				leaveRequestDetails.setDescription(rs.getString("description"));
+				leaveRequestDetails.setLeave_status(rs.getString("leave_status"));
+				leaveRequestDetails.setSubject(rs.getString("subject"));
+				leaveRequestDetails.setUserid(rs.getInt("userid"));
+				leaveRequestDetails.setLeavename(rs.getString("leavename"));
+				
+				list.add(leaveRequestDetails);
+				
+			}
+			
+		} catch (Exception e) {
+			System.out.println("Exception :"+e);
+		}
+		return list;
 	}
 
 }
