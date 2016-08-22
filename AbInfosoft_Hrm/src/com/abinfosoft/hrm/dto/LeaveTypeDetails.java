@@ -6,6 +6,7 @@ public class LeaveTypeDetails {
 	private String leavename ; 
     private String 	leavedescription ; 
 	private String leavetype ;
+	private int leavedays;
 	
 	
 	
@@ -33,6 +34,12 @@ public class LeaveTypeDetails {
 	}
 	public void setLeavetype(String leavetype) {
 		this.leavetype = leavetype;
+	}
+	public int getLeavedays() {
+		return leavedays;
+	}
+	public void setLeavedays(int leavedays) {
+		this.leavedays = leavedays;
 	}
 	
 	

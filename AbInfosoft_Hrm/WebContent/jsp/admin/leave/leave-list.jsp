@@ -190,10 +190,10 @@
 														<label>
 															<input type="checkbox" class="flat-grey">
 														</label>
-													</div></th>
-													<th>S.NO.</th>
+													</div></th>	
 													<th>Leave Name</th>
 													<th>Leave Description</th>
+												   <th>Leave Days</th>
 												
 												</tr>
 											</thead>
@@ -207,9 +207,9 @@
 															<input type="checkbox" class="flat-grey" name="leaveid" value="<s:property value="#data.id"/>">
 														</label>
 													</div></td>
-													<td><s:property value="%{#incr.index}"/></td>
 													<td><s:property value="#data.leavename"/></td>
 												    <td><s:property value="#data.leavedescription"/></td>
+												     <td><s:property value="#data.leavedays"/></td>
 											
 												</tr>
 												

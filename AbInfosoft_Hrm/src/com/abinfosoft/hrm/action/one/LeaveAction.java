@@ -18,7 +18,7 @@ public class LeaveAction  extends ActionSupport implements SessionAware,RequestA
 	private String leavename;
 	private String leavedescription;
 	private String leaveid;
-	
+	private String leavedays;
 	
 	public Map getSession() {
 	return session;
@@ -71,7 +71,7 @@ public class LeaveAction  extends ActionSupport implements SessionAware,RequestA
 	{
 		
 		LeaveDao dao=new LeaveDaoImp();
-		dao.addLeaveDetails(getLeavename(), getLeavedescription());
+		dao.addLeaveDetails(getLeavename(), getLeavedescription(),getLeavedays());
 		return "success";
 	}
 
@@ -99,6 +99,14 @@ public class LeaveAction  extends ActionSupport implements SessionAware,RequestA
 
 	public void setLeavedescription(String leavedescription) {
 		this.leavedescription = leavedescription;
+	}
+
+	public String getLeavedays() {
+		return leavedays;
+	}
+
+	public void setLeavedays(String leavedays) {
+		this.leavedays = leavedays;
 	}
 	  
 	

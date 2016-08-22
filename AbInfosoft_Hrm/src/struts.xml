@@ -109,6 +109,12 @@
 <result name="error" >jsp/admin/dashboard.jsp</result>
 <result name="input">jsp/admin/dashboard.jsp</result>
 </action>
+
+<action name="emp-delete" method="employeedelete" class="com.abinfosoft.hrm.action.one.EmployeeAction">
+<result name="success" type="redirectAction">emp-list.action</result>
+<result name="error" >jsp/admin/dashboard.jsp</result>
+<result name="input">jsp/admin/dashboard.jsp</result>
+</action>
  
 
 

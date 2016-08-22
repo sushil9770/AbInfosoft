@@ -6,7 +6,9 @@ import java.util.Map;
 import org.apache.struts2.interceptor.RequestAware;
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.abinfosoft.hrm.dao.EmployeeDao;
 import com.abinfosoft.hrm.dao.OrganizationDao;
+import com.abinfosoft.hrm.dao.imp.EmployeeDaoImp;
 import com.abinfosoft.hrm.dao.imp.OrganizationDaoImp;
 import com.abinfosoft.hrm.virtual.data.holder.EmpPersonalAndEmploymentData;
 import com.opensymphony.xwork2.ActionSupport;
@@ -147,6 +149,13 @@ public class EmployeeAction  extends ActionSupport implements SessionAware,Reque
 	
 	public String employeeprofile()
 	{
+	return "success";
+	}
+	
+	public String employeedelete()
+	{
+		EmployeeDao dao=new EmployeeDaoImp();
+		dao.deleteemployee(getEmpid());
 	return "success";
 	}
 	

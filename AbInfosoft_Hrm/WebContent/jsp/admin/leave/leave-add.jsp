@@ -144,6 +144,12 @@
 													<input type="text"  class="form-control" id="firstname" name="leavename">
 												</div>
 												<div class="form-group">
+													<label class="control-label">
+														Leave Days <span class="symbol required"></span>
+													</label>
+													<input type="text"  class="form-control" id="firstname" name="leavedays">
+												</div>
+												<div class="form-group">
 										<label for="form-field-23">
 											Leave Description
 										</label>

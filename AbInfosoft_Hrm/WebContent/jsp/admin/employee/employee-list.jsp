@@ -229,6 +229,7 @@
 									</div>
 								</div>
 								<div class="panel-body">
+								<form action="emp-delete">
 									<div class="table-responsive">
 										<table class="table table-bordered table-hover" id="sample-table-1" >
 											<thead>
@@ -255,7 +256,7 @@
 													<td class="center">
 													<div class="checkbox-table">
 														<label>
-															<input type="checkbox" class="flat-grey">
+															<input type="checkbox" class="flat-grey" name="empid" value="<s:property value="#data.userid"/>">
 														</label>
 													</div></td>
 													<td>
@@ -281,11 +282,11 @@
 											</tbody>
 										</table>
 										<div class="form-group">
-													<button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i>
-											Delete
-										</button>
+													
+										<input type="submit" value="Delete" class="btn btn-danger"></input>
 												</div>
 									</div>
+									</form>
 								</div>
 							</div>
 							<!-- end: RESPONSIVE TABLE PANEL -->

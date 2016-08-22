@@ -14,13 +14,13 @@ import com.abinfosoft.hrm.dto.LeaveTypeDetails;
 public class LeaveDaoImp implements LeaveDao{
 
 	@Override
-	public void addLeaveDetails(String leavename, String description) {
+	public void addLeaveDetails(String leavename, String description,String leavedays) {
 		try {
 			Connection con=null;
 			Statement st=null;
 			con=DBServiceHandler.getConnection();
 			st = con.createStatement();
-			 st.execute(" insert into abinfo_leave_type_details (leavename,leavedescription ) values('"+leavename+"' , '"+description+"')");
+			 st.execute(" insert into abinfo_leave_type_details (leavename,leavedescription,leavedays ) values('"+leavename+"' , '"+description+"',"+leavedays+")");
 			DBServiceHandler.cleanup( st, con);
 		} catch (Exception e) {
 			System.out.println("Exception :"+e);
@@ -44,7 +44,7 @@ public class LeaveDaoImp implements LeaveDao{
 			leaveTypeDetails.setLeavename(rs.getString("leavename"));
 			leaveTypeDetails.setLeavedescription(rs.getString("leavedescription"));
 			leaveTypeDetails.setLeavetype(rs.getString("leavetype"));
-		
+			leaveTypeDetails.setLeavedays(rs.getInt("leavedays"));
 		list.add(leaveTypeDetails);
 		}
 		DBServiceHandler.cleanup(rs, st, con);
@@ -62,7 +62,6 @@ public class LeaveDaoImp implements LeaveDao{
 			Statement st=null;
 			con=DBServiceHandler.getConnection();
 			st = con.createStatement();
-			System.err.println(leaveid+"***");
 			st.execute("delete from abinfo_leave_type_details where id="+leaveid+"");
 			DBServiceHandler.cleanup(st, con);
 		} catch (Exception e) {
