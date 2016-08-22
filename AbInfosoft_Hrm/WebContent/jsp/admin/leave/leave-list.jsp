@@ -219,7 +219,7 @@
 											</tbody>
 										</table>
 										<div class="form-group">
-										<input type="submit" name="Delete" class="btn btn-danger">
+										<input type="submit" value="Delete" placeholder="Delete" class="btn btn-danger">
 												</div>
 									</div>
 									</form>

@@ -62,7 +62,8 @@ public class LeaveDaoImp implements LeaveDao{
 			Statement st=null;
 			con=DBServiceHandler.getConnection();
 			st = con.createStatement();
-			st.executeQuery("delete from abinfo_leave_type_details where id="+leaveid+"");
+			System.err.println(leaveid+"***");
+			st.execute("delete from abinfo_leave_type_details where id="+leaveid+"");
 			DBServiceHandler.cleanup(st, con);
 		} catch (Exception e) {
 			System.out.println("Exception :"+e);

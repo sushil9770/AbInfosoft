@@ -80,7 +80,7 @@ public class LeaveAction  extends ActionSupport implements SessionAware,RequestA
 	{
 		
 		LeaveDao dao=new LeaveDaoImp();
-		System.err.println("**"+getLeaveid());
+		dao.deleteLeave(getLeaveid());
 		return "success";
 	}
 	
