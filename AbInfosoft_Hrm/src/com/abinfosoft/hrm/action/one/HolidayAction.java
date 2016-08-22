@@ -9,31 +9,26 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class HolidayAction extends ActionSupport implements SessionAware,RequestAware{
 
-	
-
 	private Map session;
 	private Map request;
 	
 	public Map getSession() {
-		return session;
+	return session;
 	}
 	public Map getRequest() {
-		return request;
+	return request;
 	}
 	@Override
 	public void setRequest(Map request) {
-		this.request = request;
+	this.request = request;
 	}
 	@Override
 	public void setSession(Map session) {
-		this.session = session;	
+	this.session = session;	
 	}
-	
-	
-	
+		
 	public String holidaylist()
 	{
-		return "success";
-		
+	return "success";
 	}
 }

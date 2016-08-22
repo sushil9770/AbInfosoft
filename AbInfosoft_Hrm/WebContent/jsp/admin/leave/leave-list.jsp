@@ -180,8 +180,9 @@
 									</div>
 								</div>
 								<div class="panel-body">
+								<form action="leave-delete" method="post">
 									<div class="table-responsive">
-										<table class="table table-bordered table-hover" id="sample-table-1" style="width: 500px">
+										<table class="table table-bordered table-hover" id="sample-table-1" style="width: 800px">
 											<thead>
 												<tr>
 													<th class="center">
@@ -190,62 +191,38 @@
 															<input type="checkbox" class="flat-grey">
 														</label>
 													</div></th>
+													<th>S.NO.</th>
 													<th>Leave Name</th>
+													<th>Leave Description</th>
 												
 												</tr>
 											</thead>
 											<tbody>
+											
+											<s:iterator id ="data" value="#request.data" status="incr">
 												<tr>
 													<td class="center">
 													<div class="checkbox-table">
 														<label>
-															<input type="checkbox" class="flat-grey">
+															<input type="checkbox" class="flat-grey" name="leaveid" value="<s:property value="#data.id"/>">
 														</label>
 													</div></td>
-													<td>Annual Leave</td>
-													
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>Sick Leave</td>
-												
+													<td><s:property value="%{#incr.index}"/></td>
+													<td><s:property value="#data.leavename"/></td>
+												    <td><s:property value="#data.leavedescription"/></td>
 											
 												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>Leave for Emergency Services</td>
-													
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>Time Off with Compensation</td>
-													
-												</tr>
-							
+												
+												</s:iterator>
+												
 								
 											</tbody>
 										</table>
 										<div class="form-group">
-													<button type="button" class="btn btn-danger">
-											Delete  
-										</button>
+										<input type="submit" name="Delete" class="btn btn-danger">
 												</div>
 									</div>
+									</form>
 								</div>
 							</div>
 							<!-- end: RESPONSIVE TABLE PANEL -->

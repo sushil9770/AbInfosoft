@@ -131,6 +131,17 @@
 <result name="input">jsp/admin/dashboard.jsp</result>
 </action>
 
+<action name="leave-add-details" method="leaveadddetails" class="com.abinfosoft.hrm.action.one.LeaveAction">
+<result name="success" type="redirectAction">leave-list.action</result>
+<result name="error" >jsp/admin/leave/leave-add.jsp</result>
+<result name="input">jsp/admin/leave/leave-add.jsp</result>
+</action>
+ 
+<action name="leave-delete" method="leavedelete" class="com.abinfosoft.hrm.action.one.LeaveAction">
+<result name="success" type="redirectAction">leave-list.action</result>
+<result name="error" >jsp/admin/leave/leave-add.jsp</result>
+<result name="input">jsp/admin/leave/leave-add.jsp</result>
+</action>
 
 
 <!--  -->

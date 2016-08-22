@@ -126,7 +126,7 @@
 									</div>
 								</div>
 								<div class="panel-body">
-								<form action="#" role="form" id="form" novalidate="novalidate">
+								<form action="leave-add-details" role="form" id="form" novalidate="novalidate" method="post">
 										<div class="row">
 											<div class="col-md-12">
 												<div class="errorHandler alert alert-danger no-display">
@@ -139,22 +139,26 @@
 											<div class="col-md-4">
 												<div class="form-group">
 													<label class="control-label">
-														Leave Type <span class="symbol required"></span>
+														Leave Name <span class="symbol required"></span>
 													</label>
-													<input type="text"  class="form-control" id="firstname" name="firstname">
+													<input type="text"  class="form-control" id="firstname" name="leavename">
 												</div>
-												
 												<div class="form-group">
-													<button type="button" class="btn btn-teal">
-											Submit
-										</button>
+										<label for="form-field-23">
+											Leave Description
+										</label>
+										<textarea maxlength="50" id="form-field-23" class="form-control limited" name="leavedescription"></textarea>
+									</div>
+												<div class="form-group">
+												<input type="submit" value="Submit" class="btn btn-teal" >													
+											
 												</div>
 												
 												
 											</div>
 											
 										
-										
+										</div>
 									</form>
 									
 								</div>
