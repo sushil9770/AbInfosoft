@@ -2,12 +2,14 @@
 
 import java.util.List;
 
-import com.abinfosoft.hrm.dto.EmpDetails;
+import com.abinfosoft.hrm.dto.EmpPersonalDetails;
+
+
 
 public interface EmployeeSalaryDao {
 	
 	
-	public List<EmpDetails>getAllEmployeeDetails();
+	public List<EmpPersonalDetails>getAllEmployeeDetails();
 	
 
 }

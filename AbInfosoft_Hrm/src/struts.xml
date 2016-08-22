@@ -78,11 +78,11 @@
 </action>
 
 
-<!-- <action name="add-salary" method="add_salary" class="com.abinfosoft.hrm.action.one.SalaryAction">
+ <action name="add-salary" method="add_salary" class="com.abinfosoft.hrm.action.one.SalaryAction">
 <result name="success">jsp/admin/salary/add-salary.jsp</result>
 <result name="error" >jsp/admin/dashboard.jsp</result>
 <result name="input">jsp/admin/dashboard.jsp</result>
-</action> -->
+</action> 
 
 
 <action name="emp-list" method="employeelist" class="com.abinfosoft.hrm.action.one.EmployeeAction">
@@ -195,14 +195,7 @@
 
 
 
-<!-- profile action -->
-<action name="my-profile" method="myprofile" class="com.abinfosoft.hrm.action.two.ProfileAction">
-<result name="success">jsp/employee/profile/my-profile.jsp</result>
-<result name="error" >jsp/employee/dashboard.jsp</result>
-<result name="input">jsp/employee/dashboard.jsp</result>
-</action>
 
-<!--  -->
 
 
 <action name="getJSONResult" method="employee_list"
@@ -215,6 +208,27 @@
            class="com.abinfosoft.hrm.action.one.JSONDataAction">
        	   <result type="json" />
       </action> -->
+
+
+<!-- action employee  -->
+
+
+<!-- profile action -->
+<action name="my-profile" method="myprofile" class="com.abinfosoft.hrm.action.two.ProfileAction">
+<result name="success">jsp/employee/profile/my-profile.jsp</result>
+<result name="error" >jsp/employee/dashboard.jsp</result>
+<result name="input">jsp/employee/dashboard.jsp</result>
+</action>
+
+<!-- leave action  -->
+<action name="leave-page" method="leavepage" class="com.abinfosoft.hrm.action.two.EmployeeLeaveAction">
+<result name="success">jsp/employee/leave/applyleave.jsp</result>
+<result name="error" >jsp/employee/dashboard.jsp</result>
+<result name="input">jsp/employee/dashboard.jsp</result>
+</action>
+
+
+
 
 
 </package>

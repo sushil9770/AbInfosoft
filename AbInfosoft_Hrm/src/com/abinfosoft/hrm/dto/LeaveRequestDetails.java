@@ -12,6 +12,9 @@ public class LeaveRequestDetails {
 	private Date todate ; 
 	private int userid ; 
 	private String leave_status;
+	
+	
+	
 	public int getId() {
 		return id;
 	}

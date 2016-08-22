@@ -9,8 +9,8 @@ import java.util.List;
 
 import com.abinfosoft.hrm.dao.LeaveDao;
 import com.abinfosoft.hrm.db.DBServiceHandler;
-import com.abinfosoft.hrm.dto.LeaveRequestDetails;
 import com.abinfosoft.hrm.dto.LeaveTypeDetails;
+import com.abinfosoft.hrm.virtual.data.holder.EmpPersonalAndLeaveData;
 
 public class LeaveDaoImp implements LeaveDao{
 
@@ -72,18 +72,19 @@ public class LeaveDaoImp implements LeaveDao{
 	}
 
 	@Override
-	public List<LeaveRequestDetails> getAllLeaveRequestDetails() {
-		List<LeaveRequestDetails> list=new ArrayList<LeaveRequestDetails>();
+	public List<EmpPersonalAndLeaveData> getAllLeaveRequestDetails() {
+		List<EmpPersonalAndLeaveData> list=new ArrayList<EmpPersonalAndLeaveData>();
 		try {
 			Connection con=null;
 			Statement st=null;
 			ResultSet rs=null;
 			con=DBServiceHandler.getConnection();
 			st = con.createStatement();
-			rs = st.executeQuery("select * from emp_leave_details");
+			rs = st.executeQuery("select a.id,a.fromdate,a.todate,a.description,a.leave_status,a.subject,a.userid,a.leavename ,b.firstname,b.lastname,b.dateofbirth,b.imageurl,b.gender from emp_leave_details a "
+					+ " INNER JOIN emp_personal_details b ON a.userid=b.userid");
 			while (rs.next()) {
 				
-				LeaveRequestDetails leaveRequestDetails=new LeaveRequestDetails();
+				EmpPersonalAndLeaveData leaveRequestDetails=new EmpPersonalAndLeaveData();
 				leaveRequestDetails.setId(rs.getInt("id"));
 				leaveRequestDetails.setFromdate(rs.getDate("fromdate"));
 				leaveRequestDetails.setTodate(rs.getDate("todate"));
@@ -92,14 +93,41 @@ public class LeaveDaoImp implements LeaveDao{
 				leaveRequestDetails.setSubject(rs.getString("subject"));
 				leaveRequestDetails.setUserid(rs.getInt("userid"));
 				leaveRequestDetails.setLeavename(rs.getString("leavename"));
-				
+				leaveRequestDetails.setFirstname(rs.getString("firstname"));
+				leaveRequestDetails.setLastname(rs.getString("lastname"));
+				leaveRequestDetails.setDateofbirth(rs.getDate("dateofbirth"));
+				leaveRequestDetails.setImageurl(rs.getString("imageurl"));
+				leaveRequestDetails.setGender(rs.getString("gender"));
 				list.add(leaveRequestDetails);
 				
 			}
-			
+			DBServiceHandler.cleanup(rs,st, con);
 		} catch (Exception e) {
 			System.out.println("Exception :"+e);
 		}
+		return list;
+	}
+
+	@Override
+	public List<String> getAllLeaveName() {
+		
+		List<String> list=new ArrayList<String>();
+		try {
+			Connection con=null;
+			Statement st=null;
+			ResultSet rs=null;
+			con=DBServiceHandler.getConnection();
+			st = con.createStatement();
+			rs = st.executeQuery("select leavename  from abinfo_leave_type_details ");
+			while (rs.next()) {
+			String leavename=rs.getString("leavename");
+			list.add(leavename);
+			}
+			DBServiceHandler.cleanup(rs,st, con);
+		} catch (Exception e) {
+		   System.out.println("Exception: "+e);
+		}
+		
 		return list;
 	}
 

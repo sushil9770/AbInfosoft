@@ -269,9 +269,9 @@
 													<td><s:property value="#data.fromdate"/></td>
 													<td>
 													<a href="emp-profile.action">
-														Sushil Kumar
+														<s:property value="#data.firstname"/> <s:property value="#data.lastname"/>
 													</a></td>
-													<td>Sick Leave </td>
+													<td><s:property value="#data.leavename"/> </td>
 													<td>5 Days</td>
 													<td>10 Days</td>
 													<td><span class="label label-sm label-success">Approved</span></td>
@@ -288,62 +288,8 @@
 													</td>
 												</tr>
 												</s:iterator>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>2016-08-08</td>
-													<td>
-													<a href="emp-profile.action">
-														Shantanu Biswal
-													</a></td>
-													<td>Sick Leave </td>
-													<td>5 Days</td>
-													<td>10 Days</td>
-													<td><span class="label label-sm label-warning">Approval Pending</span></td>
-												<td>
-													
-											<div class="form-group">
-										    <select id="form-field-select-1" class="form-control">
-										     <option value="" disabled selected>Select </option>
-											<option value="Cancel">Cancel</option>
-											<option value="Approve">Approve</option>
 											
-										</select>
-									</div>
-													</td>
-												</tr>
-												<tr>
-													<td class="center">
-													<div class="checkbox-table">
-														<label>
-															<input type="checkbox" class="flat-grey">
-														</label>
-													</div></td>
-													<td>2016-08-08</td>
-													<td>
-													<a href="emp-profile.action">
-														Parag Sarkar
-													</a></td>
-													<td>Sick Leave </td>
-													<td>5 Days</td>
-													<td>10 Days</td>
-													<td><span class="label label label-sm label-danger">Cancelled</span></td>
-													<td>
-													
-											<div class="form-group">
-										    <select id="form-field-select-1" class="form-control">
-										     <option value="" disabled selected>Select </option>
-											<option value="Cancel">Cancel</option>
-											<option value="Approve">Approve</option>
-											
-										</select>
-									</div>
-													</td>
-												</tr>
+												
 								
 											</tbody>
 										</table>

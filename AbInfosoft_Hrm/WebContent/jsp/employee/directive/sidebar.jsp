@@ -44,7 +44,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="my-profile.action">
+									<a href="leave-page.action">
 										<span class="title">Apply Leave </span>
 									</a>
 								</li>

@@ -215,7 +215,7 @@
 								
 								
 								
-									<div class="table-responsive" ng-app="myApp" ng-controller="customersCtrl">
+									<div class="table-responsive" >
 										<table class="table table-bordered table-hover" id="sample-table-1">
 											<thead>
 												<tr>
@@ -233,13 +233,13 @@
 											</thead>
 											<tbody>
 											
-											
-												<tr ng-repeat="x in names">
+											<s:iterator id ="data" value="#request.data">
+												<tr >
 												<td class="center" >
-												{{ x.id }}
+												1
 												<td>
 												<a href="#">
-												{{ x.employee_name }}
+												<s:property value="#data.firstname"/><s:property value="#data.lastname"/>
 												</a></td>
 												<td>
 												<input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
@@ -253,6 +253,7 @@
 												<td><input type="text" placeholder="Text Field" id="form-field-9" class="form-control">
 									            </td>
 												</tr>
+												</s:iterator>
 											
 											    </tbody>
 										</table>

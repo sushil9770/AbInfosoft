@@ -10,6 +10,7 @@ import com.abinfosoft.hrm.dao.LeaveDao;
 import com.abinfosoft.hrm.dao.imp.LeaveDaoImp;
 import com.abinfosoft.hrm.dto.LeaveRequestDetails;
 import com.abinfosoft.hrm.dto.LeaveTypeDetails;
+import com.abinfosoft.hrm.virtual.data.holder.EmpPersonalAndLeaveData;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class LeaveAction  extends ActionSupport implements SessionAware,RequestAware{
@@ -51,7 +52,7 @@ public class LeaveAction  extends ActionSupport implements SessionAware,RequestA
 	public String leaverequest()
 	{
 		LeaveDao dao=new LeaveDaoImp();
-		List<LeaveRequestDetails>list=dao.getAllLeaveRequestDetails();
+		List<EmpPersonalAndLeaveData>list=dao.getAllLeaveRequestDetails();
 		System.err.println(list);
 		request.put("data", list);
 		
